@@ -1,4 +1,4 @@
-# Initial Design Stage
+# Design Process: Initial Design
 This branch is dedicated to the initial design for the Digital Business Card
 # Figma Components
 Logo
@@ -12,4 +12,3 @@ Links
 Page Background
 Body
 Footer
-# Next stage in design process: PROTOTYPE
