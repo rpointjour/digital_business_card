@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Logo from './Logo';
+import SocialMedia from './SocialMedia';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,13 @@ const logo = ReactDOM.createRoot(document.getElementById('logo'));
 logo.render(
   <React.StrictMode>
     <Logo />
+  </React.StrictMode>
+)
+
+const social = ReactDOM.createRoot(document.getElementById('social'));
+social.render(
+  <React.StrictMode>
+    <SocialMedia />
   </React.StrictMode>
 )
 

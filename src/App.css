@@ -1,6 +1,6 @@
 .App {
   background-color: #080c13;
-  height:30vmin;
+  height:50vmin;
 }
 
 .App-logo {
@@ -21,12 +21,14 @@
 }
 
 .App-header {
-  background-color: #05378d;
   min-height: 50vh;
   font-size: calc(10px + 2vmin);
   color: white;
   margin-top: 10px;
   margin-left: 80px;
+  padding:20px;
+  border-radius: 10px;
+  width:max-content;
 }
 
 @keyframes App-logo-spin {

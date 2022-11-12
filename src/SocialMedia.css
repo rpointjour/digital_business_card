@@ -1,0 +1,38 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity:0.9;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  #linked{
+    color:#007bb5;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  #tube{
+    color:#bb0000;
+  }
+
+  .fa-github{
+    background:#2c4762;
+    color:white;
+  }
+  #git{
+    color: #2c4762;
+  }
