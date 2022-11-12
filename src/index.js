@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Logo from './Logo';
 import SocialMedia from './SocialMedia';
+import Loader from './Loader';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,13 @@ const social = ReactDOM.createRoot(document.getElementById('social'));
 social.render(
   <React.StrictMode>
     <SocialMedia />
+  </React.StrictMode>
+)
+
+const loader = ReactDOM.createRoot(document.getElementById('loader'));
+loader.render(
+  <React.StrictMode>
+    <Loader />
   </React.StrictMode>
 )
 
