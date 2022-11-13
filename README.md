@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Design Process: Initial Design
+This branch is dedicated to the initial design for the Digital Business Card
+# App Components
+App.js,
+App.css,
+App.test.js
+# StyleSheets
+Loader.css,
+Menu.css
+SocialMedia.css
+# Other Components
+Logo.js,
+Loader.js,
+Menu.js,
+SocialMedia.js
+# Design Preview
+![initial_design](https://user-images.githubusercontent.com/54840122/201507298-6acccf3c-b5c0-44ed-8fa7-11601668d8c3.JPG)
+>>>>>>> initial_design
