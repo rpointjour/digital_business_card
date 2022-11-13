@@ -9,31 +9,40 @@
     float:left;
   }
   
-  .fa:hover {
-    opacity:0.9;
-  }
-  
   .fa-linkedin {
-    background: #007bb5;
+    background: #010b0f;
     color: white;
+  }
+
+  .fa-linkedin:hover{
+    background:#007bb5;
   }
 
   #linked{
     color:#007bb5;
+    opacity: 0.01;
   }
   
   .fa-youtube {
-    background: #bb0000;
+    background: #010b0f;
     color: white;
   }
+  .fa-youtube:hover{
+    background: #bb0000;
+  }
   #tube{
-    color:#bb0000;
+    color:#010b0f;
+    opacity: 0.01;
   }
 
   .fa-github{
-    background:#2c4762;
+    background:#182635;
     color:white;
   }
+  .fa-github:hover{
+    background:#010b0f;
+  }
   #git{
-    color: #2c4762;
+    color: #010b0f;
+    opacity: 0.01;
   }
