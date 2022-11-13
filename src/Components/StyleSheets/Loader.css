@@ -15,7 +15,7 @@
     animation: spin 2s linear infinite;
   }
   .wrapper {
-    background: url('./R.J.P.png') center no-repeat;
+    background: url('./Images/rjp.png') center no-repeat;
     background-size:50%;
     position: absolute;
     left: 50%;

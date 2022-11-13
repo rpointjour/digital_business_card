@@ -1,5 +1,5 @@
-import logo from './logo_dbc.svg';
-import './App.css';
+import logo from './Images/logo_dbc.svg';
+import './App/App.css';
 
 function Logo(){
     return (

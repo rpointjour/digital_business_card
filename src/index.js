@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import Logo from './Logo';
-import SocialMedia from './SocialMedia';
-import Loader from './Loader';
+import App from './Components/App/App';
+import Logo from './Components/Logo';
+import SocialMedia from './Components/SocialMedia';
+import Loader from './Components/Loader';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
