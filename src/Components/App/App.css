@@ -31,7 +31,7 @@
   width:max-content;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-logo-spin{
   from {
     transform: rotate(0deg);
   }
@@ -44,6 +44,16 @@
     color:black;
     margin: 50px 200px;
     text-align: justify;
+  }
+  .email{
+    position: absolute;
+    bottom: 250px;
+    right: 40px;
+    font-size: 14px;
+    color:white;
+  }
+  .email:hover{
+    color:rgb(203, 228, 63);
   }
 
   

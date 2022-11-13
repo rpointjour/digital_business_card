@@ -9,6 +9,7 @@ function Logo(){
                 <p>Hi, my name is</p>
                 <h1>Roody Pointjour</h1>
                 <h1>I am a developer.</h1>
+                <p className="email"><strong>roody.jerry@yahoo.com</strong></p>
             </header>
         </div>
     )
