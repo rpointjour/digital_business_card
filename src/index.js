@@ -7,6 +7,7 @@ import SocialMedia from './Components/SocialMedia';
 import Loader from './Components/Loader';
 import Menu from './Components/Menu';
 import AboutMe from './Components/AboutMe';
+import Projects from './Components/Projects';
 import reportWebVitals from './reportWebVitals';
 
 const summary = ReactDOM.createRoot(document.getElementById('summary'));
@@ -51,6 +52,12 @@ about.render(
   </React.StrictMode>
 );
 
+const projects = ReactDOM.createRoot(document.getElementById('projects'));
+projects.render(
+  <React.StrictMode>
+    <Projects />
+  </React.StrictMode>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

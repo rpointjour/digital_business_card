@@ -1,5 +1,6 @@
 import './StyleSheets/AboutMe.css';
 import Roody from './StyleSheets/Images/Roody Pointjour Oct 2022-8.jpg';
+
 function AboutMe(){
     return(
         <div className="about">
