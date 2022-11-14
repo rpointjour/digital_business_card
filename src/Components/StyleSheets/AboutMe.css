@@ -1,0 +1,29 @@
+.about{
+    text-align: justify;
+    position:absolute;
+    left: 200px;
+}
+.me{
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:750px;
+    top:75px;
+    border-radius: 5px;
+}
+.cloud{
+    color:rgb(10, 83, 83);
+}
+.tech{
+    list-style-type:square;
+    text-align: left;
+    position:absolute;
+    right:535px;
+}
+.mtech{
+    list-style-type:square;
+    text-align: left;
+    position:absolute;
+    right:365px;
+}
+
