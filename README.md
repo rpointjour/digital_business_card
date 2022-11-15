@@ -5,11 +5,17 @@ App.js,
 App.css,
 App.test.js
 # StyleSheets
+AboutMe.css,
 Loader.css,
-Menu.css
+Menu.css,
+Projects.css
 SocialMedia.css
 # Other Components
+AboutMe.js,
 Logo.js,
 Loader.js,
 Menu.js,
+Projects.js,
 SocialMedia.js
+# Design Preview
+

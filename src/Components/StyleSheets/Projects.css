@@ -9,3 +9,22 @@
     height:400px;
     border-radius: 5px;
 }
+.featured{
+    position: relative;
+    bottom:400px;
+    left:600px;
+}
+
+.featured a{
+    text-decoration: none;
+    color:crimson;
+}
+
+.featured button{
+    padding:10px;
+    border-radius: 5px;
+}
+
+.featured button:hover{
+    background-color: rgb(165, 157, 42);
+}

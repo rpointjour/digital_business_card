@@ -6,7 +6,11 @@ function Projects(){
         <div className="projects">
                 <h2>02. Projects I've Worked On Before</h2><br /><br />
                 <img src= {turtlebot} alt="Turtlebot3 Waffle Pi" className='turtle' />
+                <section className="featured">
                 <h4>Featured Project</h4>
+                <h3>Turtlebot3 Waffle Pi (Leader-Follower)</h3><br />
+                <button type="button"><a href="http://localhost:3000/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
+                </section>
         </div>
     );
 }
