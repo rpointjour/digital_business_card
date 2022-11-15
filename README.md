@@ -19,3 +19,6 @@ Projects.js,
 SocialMedia.js
 # Design Preview
 
+![about_me](https://user-images.githubusercontent.com/54840122/202021645-7b8f6c79-8490-4eb1-8c25-7355352f7b8a.JPG)
+
+![projects](https://user-images.githubusercontent.com/54840122/202021905-3960aaf5-4ba3-48b5-97d9-127223b57a1b.JPG)
