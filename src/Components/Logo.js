@@ -9,10 +9,12 @@ function Logo(){
                 <p>Hi, my name is</p>
                 <h1>Roody Pointjour</h1>
                 <h1>I am a developer.</h1>
-                <p className="email"><strong>roody.jerry@yahoo.com</strong></p>
+                <a href="mailto:roody.jerry@yahoo.com" rel="noreferrer" className="email">
+                roody.jerry@yahoo.com
+                </a>
             </header>
         </div>
-    )
+    );
 }
 
 export default Logo;

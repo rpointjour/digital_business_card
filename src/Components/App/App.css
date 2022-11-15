@@ -51,6 +51,7 @@
     right: 40px;
     font-size: 14px;
     color:white;
+    text-decoration: none;
   }
   .email:hover{
     color:rgb(203, 228, 63);
