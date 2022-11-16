@@ -1,19 +1,21 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Menu from '../Menu';
+import Home from '../Home';
+import AboutMe from '../AboutMe';
+import Projects from "../Projects";
 
 function App() {
   return (
-    <div className="App-summary">
-      <article>
-        <h3>
-          <div>
-          Computer Engineer specializing in designing, building, 
-          <br />and deploying advanced systems and applications.
-          <br />Currently, I am
-          focused on building innovative software technology.
-          </div>
-          </h3>
-      </article>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Menu />}>
+          <Route index element={<Home />} />
+          <Route path="aboutme" element={<AboutMe />} />
+          <Route path="projects" element={<Projects/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

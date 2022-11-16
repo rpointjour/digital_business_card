@@ -5,7 +5,7 @@ var myVar;
 function showPage(){
     document.getElementById('wrapper').style.display="none";
     document.getElementById('loader').style.display = "none";
-    document.getElementById('myPage').style.display="block";
+    //document.getElementById('myPage').style.display="block";
 }
 
 function myFunction()

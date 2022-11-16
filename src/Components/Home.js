@@ -1,8 +1,11 @@
 import logo from './StyleSheets/Images/logo_dbc.svg';
 import './App/App.css';
+import SocialMedia from './SocialMedia';
+import Summary from './Summary';
 
-function Logo(){
+function Home(){
     return (
+        <>
         <div className="Logo-place">
             <img src={logo} className="App-logo" alt="logo"/>
             <header className="App-header">
@@ -14,7 +17,10 @@ function Logo(){
                 </a>
             </header>
         </div>
+        <SocialMedia />
+        <Summary />
+        </>
     );
 }
 
-export default Logo;
+export default Home;

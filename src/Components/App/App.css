@@ -47,10 +47,10 @@
   }
   .email{
     position: absolute;
-    bottom: 250px;
+    bottom: 263px;
     right: 40px;
-    font-size: 14px;
     color:white;
+    font-size: 14px;
     text-decoration: none;
   }
   .email:hover{
