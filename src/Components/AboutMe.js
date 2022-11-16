@@ -1,5 +1,6 @@
 import './StyleSheets/AboutMe.css';
 import Roody from './StyleSheets/Images/Roody Pointjour Oct 2022-8.jpg';
+import Helmet from 'react-helmet';
 
 function AboutMe(){
     return(
@@ -33,7 +34,9 @@ function AboutMe(){
         <li>C#</li><br />
         <li>Python</li>
     </ul>
+    <Helmet bodyAttributes={{style: 'background-color : #add8e6'}}/>
         </div>
+        
     
     );
 }
