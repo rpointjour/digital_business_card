@@ -1,20 +1,30 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Menu from '../Menu';
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useLayoutEffect } from 'react';
 import Home from '../Home';
-import AboutMe from '../AboutMe';
+import Menu from '../Menu';
 import Projects from "../Projects";
+
+
+const Wrapper = ({children}) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children
+} 
 
 function App() {
   return (
     <BrowserRouter>
+    <Wrapper>
+      <Home />
+      <Menu />
       <Routes>
-          <Route path="/" element={<Menu />}>
-          <Route index element={<Home />} />
-          <Route path="aboutme" element={<AboutMe />} />
-          <Route path="projects" element={<Projects/>} />
-        </Route>
+          <Route path="/projects" element={<Projects />}>
+          </Route>
       </Routes>
+      </Wrapper>
     </BrowserRouter>
   );
 }
