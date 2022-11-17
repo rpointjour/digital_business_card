@@ -1,9 +1,8 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
 import { useLayoutEffect } from 'react';
 import Home from '../Home';
 import Menu from '../Menu';
-import Projects from "../Projects";
 
 
 const Wrapper = ({children}) => {
@@ -20,10 +19,6 @@ function App() {
     <Wrapper>
       <Home />
       <Menu />
-      <Routes>
-          <Route path="/projects" element={<Projects />}>
-          </Route>
-      </Routes>
       </Wrapper>
     </BrowserRouter>
   );

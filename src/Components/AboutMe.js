@@ -1,13 +1,13 @@
 import './StyleSheets/AboutMe.css';
 import Roody from './StyleSheets/Images/Roody Pointjour Oct 2022-8.jpg';
-import Helmet from 'react-helmet';
 
 function AboutMe(){
     return(
+        <>
         <div className="about">
-            <img src={Roody} alt="Roody Pointjour" className="me" />
-            <h1>01. About Me</h1>
-            <article>
+            <img src={Roody} alt="Roody Pointjour" />
+            <h1 className='details'>01. About Me</h1>
+            <article className='details'>
                 <p>
                     Hello! My name is Roody and I have a passion
                     for developing cool and exciting projects. <br />My initerest
@@ -34,10 +34,8 @@ function AboutMe(){
         <li>C#</li><br />
         <li>Python</li>
     </ul>
-    <Helmet bodyAttributes={{style: 'background-color : #add8e6'}}/>
         </div>
-        
-    
+        </>
     );
 }
 
