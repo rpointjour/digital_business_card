@@ -32,7 +32,7 @@ function AboutMe(){
     <ul className="mtech">
         <li>C++</li><br />
         <li>C#</li><br />
-        <li>Python</li>
+        <li>Python</li><br /><br />
     </ul>
         </div>
         </>

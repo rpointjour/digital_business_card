@@ -1,13 +1,17 @@
 import './StyleSheets/Menu.css';
 import {Link}from 'react-scroll';
+import{Outlet} from "react-router-dom";
 
 function Menu(){
+    var Scroll = require('react-scroll');
+    var scroll = Scroll.animateScroll;
+
+    scroll.scrollToTop("#root");
     return(
         <>
         <nav>
             <ul className="menu">
             <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
-            <li className='item'><a href="#dev">In Development</a></li>
             <li className="item"><Link 
             spy={true} 
             smooth={true}
@@ -26,6 +30,7 @@ function Menu(){
             
             </ul>
         </nav>
+        <Outlet />
         </>
     );
 }

@@ -8,7 +8,7 @@ import Menu from '../Menu';
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
-    document.documentElement.scrollTo(0, 0);
+    document.documentElement.scrollTo(0, 10);
   }, [location.pathname]);
   return children
 } 
