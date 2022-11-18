@@ -1,3 +1,4 @@
+import React from "react";
 import logo from './StyleSheets/Images/logo_dbc.svg';
 import './App/App.css';
 import SocialMedia from './SocialMedia';

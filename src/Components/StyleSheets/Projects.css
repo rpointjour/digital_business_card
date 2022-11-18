@@ -1,18 +1,23 @@
 .projects{
     overflow-x: hidden;
-    background-color: rgb(235, 252, 248);
+    background-color: #f0f0fc;
 }
 .projects h1{
     position:relative;
     right:350px;
 }
-.turtle{
-    width:275px;
-    height:400px;
-    border-radius: 5px;
+
+.slider{
+    margin: 60px auto;
+    width: 500px;
+  }
+
+.featured{
     position:relative;
-    right:200px;
+    left:350px;
+    bottom:450px;
 }
+
 .featured a{
     text-decoration: none;
     color:crimson;
@@ -26,3 +31,24 @@
 .featured button:hover{
     background-color: rgb(165, 157, 42);
 }
+
+.slick-prev {
+    left: 30% !important;
+    z-index: 1;
+    background-color: black;
+    border-radius: 18px;
+  }
+  .slick-next {
+    right: 30% !important;
+    z-index: 1;
+    background-color: black;
+    border-radius: 18px;
+  }
+
+  .slick-prev:hover{
+    background-color: green;
+  }
+
+  .slick-next:hover{
+    background-color: green;
+  }

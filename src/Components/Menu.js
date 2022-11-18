@@ -1,3 +1,4 @@
+import React from "react";
 import './StyleSheets/Menu.css';
 import {Link}from 'react-scroll';
 import{Outlet} from "react-router-dom";
