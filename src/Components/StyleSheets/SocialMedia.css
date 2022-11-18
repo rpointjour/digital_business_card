@@ -1,0 +1,48 @@
+.fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float:left;
+  }
+  
+  .fa-linkedin {
+    background: #010b0f;
+    color: white;
+  }
+
+  .fa-linkedin:hover{
+    background:#007bb5;
+  }
+
+  #linked{
+    color:#007bb5;
+    opacity: 0.01;
+  }
+  
+  .fa-youtube {
+    background: #010b0f;
+    color: white;
+  }
+  .fa-youtube:hover{
+    background: #bb0000;
+  }
+  #tube{
+    color:#010b0f;
+    opacity: 0.01;
+  }
+
+  .fa-github{
+    background:#182635;
+    color:white;
+  }
+  .fa-github:hover{
+    background:#010b0f;
+  }
+  #git{
+    color: #010b0f;
+    opacity: 0.01;
+  }

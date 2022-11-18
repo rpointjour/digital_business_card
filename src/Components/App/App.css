@@ -1,0 +1,59 @@
+.App {
+  background-color: #080c13;
+  height:50vmin;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  float:left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+.Logo-place{
+  display:flex;
+  background-color: #080c13;
+}
+
+.App-header {
+  min-height: 50vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding:20px;
+  border-radius: 10px;
+  width:max-content;
+}
+
+@keyframes App-logo-spin{
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  .App-summary{
+    color:black;
+    margin: 50px 200px;
+    text-align: justify;
+  }
+  .email{
+    position: absolute;
+    bottom: 250px;
+    right: 40px;
+    font-size: 14px;
+    color:white;
+  }
+  .email:hover{
+    color:rgb(203, 228, 63);
+  }
+
+  
