@@ -1,16 +1,37 @@
 import './StyleSheets/Menu.css';
+import {Link}from 'react-scroll';
+import{Outlet} from "react-router-dom";
 
 function Menu(){
+    var Scroll = require('react-scroll');
+    var scroll = Scroll.animateScroll;
+
+    scroll.scrollToTop("#root");
     return(
-        <nav className="menu">
-            <ul>
-            <li><a href="localhost:3000/src/Components/Resume/Roody-Pointjour-Resume.pdf" className="Resume">Resume</a></li>
-            <li><a href="#contact">04. Contact</a></li>
-            <li><a href="#dev">03. In Development</a></li>
-            <li><a href="#projects">02. Projects</a></li>
-            <li><a className="active" href="#about">01. About</a></li>
+        <>
+        <nav>
+            <ul className="menu">
+            <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+            <li className="item"><Link 
+            spy={true} 
+            smooth={true}
+            offset={5} 
+            duration={100} 
+            to="projects" 
+            href="#projects"
+            >Projects</Link></li>
+            <li className="item"><Link 
+            spy={true} 
+            smooth={true} 
+            offset={5} 
+            duration={100} 
+            to="about" 
+            href="#about">About</Link></li>
+            
             </ul>
         </nav>
+        <Outlet />
+        </>
     );
 }
 

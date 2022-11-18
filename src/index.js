@@ -1,47 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './Components/StyleSheets/AboutMe.css';
 import App from './Components/App/App';
-import Logo from './Components/Logo';
-import SocialMedia from './Components/SocialMedia';
 import Loader from './Components/Loader';
-import Menu from './Components/Menu';
+import AboutMe from './Components/AboutMe';
+import Projects from './Components/Projects';
 import reportWebVitals from './reportWebVitals';
 
-const summary = ReactDOM.createRoot(document.getElementById('summary'));
-summary.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-const logo = ReactDOM.createRoot(document.getElementById('logo'));
-logo.render(
-  <React.StrictMode>
-    <Logo />
-  </React.StrictMode>
-)
-
-const social = ReactDOM.createRoot(document.getElementById('social'));
-social.render(
-  <React.StrictMode>
-    <SocialMedia />
-  </React.StrictMode>
-)
-
 const loader = ReactDOM.createRoot(document.getElementById('loader'));
-loader.render(
-  <React.StrictMode>
-    <Loader />
-  </React.StrictMode>
-)
+loader.render(<Loader />);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
-const menu = ReactDOM.createRoot(document.getElementById('menu'));
-menu.render(
-  <React.StrictMode>
-    <Menu />
-  </React.StrictMode>
-)
+const about = ReactDOM.createRoot(document.getElementById('about'));
+about.render(<AboutMe />);
+
+const projects = ReactDOM.createRoot(document.getElementById('projects'));
+projects.render(<Projects />);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

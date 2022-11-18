@@ -1,19 +1,22 @@
-ul {
+body{
+  margin:0;
+}
+.menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     overflow: hidden;
     background-color: #080c13;
     position:absolute;
-    top: 20px;
-    right: 5px;
+    top:0;
+    right:20px;
   }
   
-  li {
+  .item {
     float: right;
   }
   
-  li a {
+ .item a {
     display: block;
     color: white;
     text-align: center;
@@ -21,12 +24,12 @@ ul {
     text-decoration: none;
   }
 
-  li button{
+ .item button{
     display:block;
     text-align:center;
   }
   
-  li a:hover {
+  .item a:hover {
     background-color: #111;
   }
 
@@ -44,3 +47,9 @@ ul {
   .active {
     background-color: #70720d;
   }
+  .tp{
+    color:white;
+  }
+  html {
+    scroll-behavior: smooth;
+}

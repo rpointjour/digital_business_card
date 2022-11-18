@@ -1,19 +1,26 @@
 import './App.css';
+import { BrowserRouter, useLocation } from "react-router-dom";
+import { useLayoutEffect } from 'react';
+import Home from '../Home';
+import Menu from '../Menu';
+
+
+const Wrapper = ({children}) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 10);
+  }, [location.pathname]);
+  return children
+} 
 
 function App() {
   return (
-    <div className="App-summary">
-      <article>
-        <h3>
-          <div>
-          Computer Engineer specializing in designing, building, 
-          <br />and deploying advanced systems and applications.
-          <br />Currently, I am
-          focused on building innovative software technology.
-          </div>
-          </h3>
-      </article>
-    </div>
+    <BrowserRouter>
+    <Wrapper>
+      <Home />
+      <Menu />
+      </Wrapper>
+    </BrowserRouter>
   );
 }
 

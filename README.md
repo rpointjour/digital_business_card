@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,19 +73,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # Design Process: Initial Design
 This branch is dedicated to the initial design for the Digital Business Card
+=======
+# Design Process: Prototype
+This branch is dedicated to the prototype for the Digital Business Card
+>>>>>>> f5750cede2619cbe5ad1834862d9a196fa03fb04
 # App Components
 App.js,
 App.css,
 App.test.js
 # StyleSheets
+AboutMe.css,
 Loader.css,
-Menu.css
+Menu.css,
+Projects.css
 SocialMedia.css
 # Other Components
+AboutMe.js,
 Logo.js,
 Loader.js,
 Menu.js,
+Projects.js,
 SocialMedia.js
 # Design Preview
+<<<<<<< HEAD
 ![initial_design](https://user-images.githubusercontent.com/54840122/201507298-6acccf3c-b5c0-44ed-8fa7-11601668d8c3.JPG)
 >>>>>>> origin/initial_design
+=======
+
+![about_me](https://user-images.githubusercontent.com/54840122/202021645-7b8f6c79-8490-4eb1-8c25-7355352f7b8a.JPG)
+
+![projects](https://user-images.githubusercontent.com/54840122/202021905-3960aaf5-4ba3-48b5-97d9-127223b57a1b.JPG)
+>>>>>>> f5750cede2619cbe5ad1834862d9a196fa03fb04
