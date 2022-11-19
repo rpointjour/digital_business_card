@@ -22,9 +22,8 @@ SocialMedia.js,
 Summary.js
 # Dependencies
 react-dom,
-react-helmet,
 react-scroll,
-react-script
+react-slick
 # Design Preview
 
 ![home](https://user-images.githubusercontent.com/54840122/202816900-38a9a6f4-ef53-42cc-97ee-d02f2ff723a5.JPG)
