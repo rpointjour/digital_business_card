@@ -7,7 +7,6 @@ import dReader from "./StyleSheets/Images/distance_reader.JPG";
 export default function Carousel() {
   var settings = {
     dots: true,
-    arrows:true,
     infinite: true,
     fade:true,
     speed: 500,

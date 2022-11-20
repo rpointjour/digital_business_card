@@ -52,23 +52,3 @@
   transform: translateY(4px);
 }
 
-.slick-prev {
-    left: 30% !important;
-    z-index: 1;
-    background-color: black;
-    border-radius: 18px;
-  }
-  .slick-next {
-    right: 30% !important;
-    z-index: 1;
-    background-color: black;
-    border-radius: 18px;
-  }
-
-  .slick-prev:hover{
-    background-color: black;
-  }
-
-  .slick-next:hover{
-    background-color: black;
-  }
