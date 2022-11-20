@@ -16,9 +16,9 @@ function AboutMe(){
                     (2019) - Object-Oriented programming where I learned the Java Programming language.
                 </p>
                 <p>
-                    Fast-forward to today, I've had the experience to work as an Front-end developer intern<br /> 
-                    for an iOS and Android based application. My primary focus these days revolves around<br />
-                    developing innovative software applications for cloud deployment (<b className="cloud">Cloud-based apps!</b>). 
+                    As of now, I have the experience of working as a Front-end developer intern 
+                    for an iOS<br /> and Android based application. My primary focus these days revolves around
+                    developing<br /> innovative software applications for cloud deployment (<b className="cloud">Cloud-based apps!</b>). 
                 </p>
                 <p>
                     Also, here are some of the technologies that I have utililized and worked with recently:
