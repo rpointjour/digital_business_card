@@ -9,7 +9,7 @@ function Home(){
         <>
         <div className="Logo-place">
             <img src={logo} className="App-logo" alt="logo"/>
-            <header className="App-header">
+            <header className= "App-header">
                 <p>Hi, my name is</p>
                 <h1>Roody Pointjour</h1>
                 <h1>I am a developer.</h1>

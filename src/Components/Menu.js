@@ -1,13 +1,10 @@
 import React from "react";
 import './StyleSheets/Menu.css';
 import {Link}from 'react-scroll';
-import{Outlet} from "react-router-dom";
 
 function Menu(){
-    var Scroll = require('react-scroll');
-    var scroll = Scroll.animateScroll;
+   
 
-    scroll.scrollToTop("#root");
     return(
         <>
         <nav>
@@ -31,7 +28,6 @@ function Menu(){
             
             </ul>
         </nav>
-        <Outlet />
         </>
     );
 }

@@ -1,0 +1,21 @@
+.scroll-fixed-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background: tomato;
+    color: white;
+    font-size: 3rem;
+    transition: transform 200ms ease-out;
+  }
+  
+  .scroll-fixed-container--top {
+    top: 0;
+    transform: translateY(-100%)
+  }
+  
+  .scroll-fixed-container--bottom {
+    bottom: 0;
+    transform: translateY(100%)
+  }
+  
