@@ -32,5 +32,7 @@ react-slick
 
 ![projects](https://user-images.githubusercontent.com/54840122/202816937-2b4a415e-2681-4ecc-b118-65623de92174.JPG)
 
+![navigation_menu](https://user-images.githubusercontent.com/54840122/202891394-46d1cf36-c887-4d1c-bec8-556719ea3430.JPG)
+
 
 
