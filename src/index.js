@@ -6,6 +6,7 @@ import App from './Components/App/App';
 import Loader from './Components/Loader';
 import AboutMe from './Components/AboutMe';
 import Projects from './Components/Projects';
+import Connect from './Components/Connect';
 import reportWebVitals from './reportWebVitals';
 
 const loader = ReactDOM.createRoot(document.getElementById('loader'));
@@ -18,6 +19,9 @@ about.render(<AboutMe />);
 
 const projects = ReactDOM.createRoot(document.getElementById('projects'));
 projects.render(<Projects />);
+
+const connect = ReactDOM.createRoot(document.getElementById('connect'));
+connect.render(<Connect />);
 
 
 // If you want to start measuring performance in your app, pass a function

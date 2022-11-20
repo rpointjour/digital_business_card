@@ -15,6 +15,14 @@ function Menu(){
             smooth={true}
             offset={5} 
             duration={100} 
+            to="connect" 
+            href="#connect"
+            >Connect</Link></li>
+            <li className="item"><Link 
+            spy={true} 
+            smooth={true}
+            offset={5} 
+            duration={100} 
             to="projects" 
             href="#projects"
             >Projects</Link></li>

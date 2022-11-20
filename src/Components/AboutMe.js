@@ -29,7 +29,7 @@ function AboutMe(){
         <li>React</li><br />
         <li>Node.js</li>
     </ul>
-    <ul className="mtech">
+    <ul className="mtech font-effect-fire">
         <li>C++</li><br />
         <li>C#</li><br />
         <li>Python</li><br /><br />

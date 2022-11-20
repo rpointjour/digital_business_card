@@ -5,31 +5,51 @@
 .projects h1{
     position:relative;
     right:350px;
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
 }
 
 .slider{
     margin: 60px auto;
     width: 500px;
+    
   }
 
 .featured{
     position:relative;
     left:350px;
     bottom:450px;
+    font-family: 'Inter', sans-serif;
 }
 
 .featured a{
     text-decoration: none;
-    color:crimson;
+    color:#fff;
 }
 
 .featured button{
-    padding:10px;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #af4c4c;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
 .featured button:hover{
-    background-color: rgb(165, 157, 42);
+    background-color: #adaf4c;
+}
+
+.featured button:active{
+  background-color: #af4c4c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .slick-prev {

@@ -1,10 +1,11 @@
 import React from "react";
 import './StyleSheets/Projects.css';
 import Carousel from "./Carousel";
+
 function Projects(){
     return(
         <div className="projects">
-                <h1>02. Past Projects</h1>
+                <h1>02. Featured Projects</h1>
                 <br /><br />
                 <Carousel className="slick-prev slick-next" />
                 <section className="featured">

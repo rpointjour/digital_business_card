@@ -35,7 +35,12 @@ export default function Carousel() {
             borderRadius:"5px"
         }} 
         />
-        <h3>Turtlebot3 Waffle Pi (Leader-Follower)</h3>
+        <h3
+        style={
+          {
+            fontFamily:"Inter"
+        }}
+        ><b>Turtlebot3 Waffle Pi (Leader-Follower)</b></h3>
       </div>
       <div>
       <img src={stockHome} alt="Stock App" 
@@ -49,7 +54,12 @@ export default function Carousel() {
             borderRadius:"5px"
         }} 
         />
-        <h3>My Stock App</h3>
+        <h3
+        style={
+          {
+            fontFamily:"Inter"
+        }}
+        ><b>My Stock App</b></h3>
       </div>
       <div>
       <img src={dReader} alt="Distance Reader" 
@@ -63,7 +73,12 @@ export default function Carousel() {
             borderRadius:"5px"
         }} 
         />
-        <h3>Distance Reader (Embedded System)</h3>
+        <h3
+        style={
+          {
+            fontFamily:"Inter"
+        }}
+        ><b>Distance Reader</b> (Embedded System)</h3>
       </div>
     </Slider>
     </>
