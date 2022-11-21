@@ -1,6 +1,6 @@
 .projects{
     overflow-x: hidden;
-    background-color: #080c13;
+    background-color: #0d141f;
 }
 .projects h1{
     position:relative;
@@ -68,4 +68,16 @@
   bottom:100px;
   color:#fff;
 }
+.stockApp{
+  border:7px groove #fff;
+  border-radius: 5px;
+  outline:0px groove #fff;
+  outline-offset: 1px;
+}
 
+.dReader{
+  border:7px groove #fff;
+  border-radius: 5px;
+  outline:0px groove #fff;
+  outline-offset: 1px;
+}

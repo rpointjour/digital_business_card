@@ -1,11 +1,15 @@
 import './StyleSheets/AboutMe.css';
 import Roody from './StyleSheets/Images/Roody Pointjour Oct 2022-8.jpg';
+import ReactTooltip from "react-tooltip";
 
 function AboutMe(){
     return(
         <>
         <div className="about">
-            <img src={Roody} alt="Roody Pointjour" />
+            <img src={Roody} alt="Roody Pointjour" data-tip data-for="imageTip" />
+            <ReactTooltip id="imageTip" place="top" effect="solid">
+                Roody Pointjour
+            </ReactTooltip>
             <h1 className='details'>01. About Me</h1>
             <article className='details'>
                 <p>

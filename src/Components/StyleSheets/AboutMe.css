@@ -1,5 +1,5 @@
 .about{
-    background-color: #080c13;
+    background-color: #0d141f;
     height:120vmin;
 }
 .about img{
@@ -8,12 +8,14 @@
     border-radius: 5px;
     position:relative;
     left:375px;
-    top:87px;
+    top:107px;
 }
+
 .about img:hover{
     opacity:0.8;
     cursor:help;
 }
+
 .details{
     color:#fff;
     text-align: justify;
