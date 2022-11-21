@@ -7,7 +7,7 @@ function AboutMe(){
         <>
         <div className="about">
             <img src={Roody} alt="Roody Pointjour" data-tip data-for="imageTip" />
-            <ReactTooltip id="imageTip" place="top" effect="solid">
+            <ReactTooltip id="imageTip" place="top" effect="solid" arrowColor='black'>
                 Roody Pointjour
             </ReactTooltip>
             <h1 className='details'>01. About Me</h1>

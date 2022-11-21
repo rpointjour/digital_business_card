@@ -7,6 +7,7 @@ body{
     padding-top: 220px;
     position:relative;
     bottom:30px;
+    font-family:'Inter', sans-serif;
 }
 .connect button{
   display: inline-block;
@@ -30,6 +31,7 @@ body{
 }
 .credits{
   font-size:14px;
+  font-family:'Inter', sans-serif;
   position:relative;
   left:5px;
   top:30px;
