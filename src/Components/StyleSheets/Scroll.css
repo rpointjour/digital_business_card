@@ -3,12 +3,14 @@
     left: 0;
     right: 0;
     padding: 16px;
-    background: #080c13;
+    background: #080c13 !important;
     z-index: 300;
     color: white;
     text-align: right;
     font-size:20px;
     transition: transform 200ms ease-out;
+    border:none;
+    box-shadow: none;
   }
   
   .scroll-fixed-container--top {

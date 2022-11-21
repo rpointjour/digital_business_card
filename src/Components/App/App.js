@@ -66,7 +66,6 @@ function App() {
             duration={100} 
             to="root" 
             href="#about">Home</Link></li>
-            
             </ul>
         </nav>
       </div>

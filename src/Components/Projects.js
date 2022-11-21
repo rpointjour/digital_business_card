@@ -7,14 +7,20 @@ function Projects(){
         <div className="projects">
                 <h1>02. Featured Projects</h1>
                 <br /><br />
-                <Carousel className="slick-prev slick-next" />
+                <Carousel />
                 <section className="featured">
                 <h3>Turtlebot3 Waffle Pi (Leader-Follower)</h3><br />
                 <button type="button"><a href="http://localhost:3000/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
                 <br /><br />
-                <h3>Stock App (Android Studio)</h3><br />
-                <h3>Distance Reader (Embedded System)</h3><br />
                 </section>
+                <div className="stock">
+                <div>
+                <h3>Stock App (Android Studio)</h3><br />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m-GYSwUPJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3>Distance Reader (Embedded System)</h3><br />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w-XhrnkmF6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
         </div>
     );
 }

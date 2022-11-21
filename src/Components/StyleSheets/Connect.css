@@ -1,0 +1,88 @@
+
+body{
+    background-color: #080c13;
+}
+.connect{
+    color:#fff;
+    padding-top: 220px;
+    position:relative;
+    bottom:30px;
+}
+.connect button{
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #2000ad;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(3, 0, 0);
+}
+.connect a{
+  text-decoration: none;
+  color:#fff;
+}
+.connect button:hover{
+  background-color: #00bb28;
+}
+.credits{
+  font-size:14px;
+  position:relative;
+  left:5px;
+  top:30px;
+  margin:0;
+  padding-bottom:20px;
+}
+.af {
+    display:flex;
+    padding: 15px;
+    font-size: 15px;
+    width:15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position:relative;
+    left:590px;
+    
+  }
+  
+  .af-linkedin {
+    background: #010b0f;
+    color: white;
+  }
+
+  .af-linkedin:hover{
+    background:#007bb5;
+  }
+
+  #linked{
+    color:#007bb5;
+    opacity: 0.01;
+  }
+  
+  .afyoutube {
+    background: #010b0f;
+    color: white;
+  }
+  .af-youtube:hover{
+    background: #bb0000;
+  }
+  #tube{
+    color:#010b0f;
+    opacity: 0.01;
+  }
+
+  .af-github{
+    background:#182635;
+    color:white;
+  }
+  .af-github:hover{
+    background:#010b0f;
+  }
+  #git{
+    color: #010b0f;
+    opacity: 0.01;
+  }

@@ -1,5 +1,5 @@
 .about{
-    background-color: #d6eaf0;
+    background-color: #080c13;
     height:120vmin;
 }
 .about img{
@@ -15,6 +15,7 @@
     cursor:help;
 }
 .details{
+    color:#fff;
     text-align: justify;
     font-family: 'Inter', sans-serif;
     position:relative;
@@ -22,7 +23,7 @@
     bottom:250px;
 }
 .cloud{
-    color:rgb(10, 83, 83);
+    color:rgb(20, 156, 156);
 }
 .tech{
     list-style-type:square;
@@ -32,7 +33,7 @@
     position:relative;
     left:200px;
     bottom:200px;
-    color:rgb(10, 83, 83);
+    color:rgb(20, 156, 156);
 }
 .mtech{
     list-style-type:square;
@@ -42,5 +43,5 @@
     position:relative;
     left:420px;
     bottom:316px;
-    color:rgb(10, 83, 83);
+    color:rgb(20, 156, 156);
 }

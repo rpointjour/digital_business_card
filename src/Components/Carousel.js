@@ -6,10 +6,13 @@ import dReader from "./StyleSheets/Images/distance_reader.JPG";
 
 export default function Carousel() {
   var settings = {
-    dots: true,
+    dots:true,
+    arrows:false,
     infinite: true,
     fade:true,
-    speed: 500,
+    speed: 1500,
+    autoplay:true,
+    autoplaySpeed:10000,
     slidesToShow: 1,
     slidesToScroll: 1
   };
@@ -37,7 +40,8 @@ export default function Carousel() {
         <h3
         style={
           {
-            fontFamily:"Inter"
+            fontFamily:"Inter",
+            color:"#fff"
         }}
         ><b>Turtlebot3 Waffle Pi (Leader-Follower)</b></h3>
       </div>
@@ -56,7 +60,8 @@ export default function Carousel() {
         <h3
         style={
           {
-            fontFamily:"Inter"
+            fontFamily:"Inter",
+            color:"#fff"
         }}
         ><b>My Stock App</b></h3>
       </div>
@@ -75,9 +80,10 @@ export default function Carousel() {
         <h3
         style={
           {
-            fontFamily:"Inter"
+            fontFamily:"Inter",
+            color:"#fff"
         }}
-        ><b>Distance Reader</b> (Embedded System)</h3>
+        ><b>Distance Reader (Embedded System)</b></h3>
       </div>
     </Slider>
     </>

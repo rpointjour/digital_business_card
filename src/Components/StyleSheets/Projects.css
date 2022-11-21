@@ -1,12 +1,13 @@
 .projects{
     overflow-x: hidden;
-    background-color: #f0f0fc;
+    background-color: #080c13;
 }
 .projects h1{
     position:relative;
     right:350px;
     font-family: 'Inter', sans-serif;
     font-weight:bold;
+    color:#fff;
 }
 
 .slider{
@@ -14,12 +15,21 @@
     width: 500px;
     
   }
+  .slick-dots li button:before {
+    color:rgb(255, 255, 255);
+    opacity:1;
+  }
+  .slick-dots li.slick-active button:before {
+    color:rgb(114, 27, 27);
+    opacity:1;
+}
 
 .featured{
     position:relative;
     left:350px;
-    bottom:450px;
+    bottom:350px;
     font-family: 'Inter', sans-serif;
+    color:#fff;
 }
 
 .featured a{
@@ -39,7 +49,7 @@
   background-color: #af4c4c;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 5px rgb(66, 63, 63);
 }
 
 .featured button:hover{
@@ -50,5 +60,12 @@
   background-color: #af4c4c;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.stock{
+  position:relative;
+  right:10px;
+  bottom:100px;
+  color:#fff;
 }
 
