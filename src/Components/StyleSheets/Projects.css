@@ -4,7 +4,7 @@
 }
 .projects h1{
     position:relative;
-    right:350px;
+    right:300px;
     font-family: 'Inter', sans-serif;
     font-weight:bold;
     color:#fff;
@@ -13,7 +13,6 @@
 .slider{
     margin: 60px auto;
     width: 500px;
-    
   }
   .slick-dots li button:before {
     color:rgb(255, 255, 255);
