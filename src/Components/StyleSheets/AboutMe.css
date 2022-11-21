@@ -1,5 +1,5 @@
 .about{
-    background-color: #0d141f;
+    background-color: #87a2cc;
     height:120vmin;
 }
 .about img{
@@ -17,7 +17,7 @@
 }
 
 .details{
-    color:#fff;
+    color:black;
     text-align: justify;
     font-family: 'Inter', sans-serif;
     position:relative;
@@ -25,7 +25,8 @@
     bottom:250px;
 }
 .cloud{
-    color:rgb(20, 156, 156);
+    color:rgb(249, 249, 253);
+    text-shadow:1px 1px black;
 }
 .tech{
     list-style-type:square;
@@ -35,7 +36,7 @@
     position:relative;
     left:200px;
     bottom:200px;
-    color:rgb(20, 156, 156);
+    color:black;
 }
 .mtech{
     list-style-type:square;
@@ -45,7 +46,7 @@
     position:relative;
     left:420px;
     bottom:316px;
-    color:rgb(20, 156, 156);
+    color:black;
 }
 
 #imageTip{

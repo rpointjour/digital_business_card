@@ -17,7 +17,7 @@
 
 .Logo-place{
   display:flex;
-  background-color: #0d141f;
+  background-color: #080c13;
 }
 
 .App-header {
@@ -41,7 +41,7 @@
 }
 
   .App-summary{
-    color:#fff;
+    color:black;
     margin: 50px 200px;
     text-align: justify;
     font-family: 'Source Sans Pro', sans-serif;

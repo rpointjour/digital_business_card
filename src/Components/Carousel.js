@@ -41,7 +41,7 @@ export default function Carousel() {
         style={
           {
             fontFamily:"Inter",
-            color:"#fff"
+            color:"black"
         }}
         ><b>Turtlebot3 Waffle Pi (Leader-Follower)</b></h3>
       </div>
@@ -61,7 +61,7 @@ export default function Carousel() {
         style={
           {
             fontFamily:"Inter",
-            color:"#fff"
+            color:"black"
         }}
         ><b>My Stock App</b></h3>
       </div>
@@ -81,7 +81,7 @@ export default function Carousel() {
         style={
           {
             fontFamily:"Inter",
-            color:"#fff"
+            color:"black"
         }}
         ><b>Distance Reader (Embedded System)</b></h3>
       </div>

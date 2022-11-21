@@ -5,12 +5,12 @@
 .loader {
     width: 120px;
     height: 120px;
-    border: 16px solid #f3f3f3;
+    border: 16px solid #480baa;
     border-radius: 50%;
-    border-top: 16px solid #091a25;
-    border-bottom:16px solid #091a25;
-    border-left: 16px solid #ffffff;
-    border-right:16px solid #dfdfdf;
+    border-top: 16px solid #003ca5;
+    border-bottom:16px solid #003ca5;
+    border-left: 16px solid black;
+    border-right:16px solid black;;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }

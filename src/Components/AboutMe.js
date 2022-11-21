@@ -22,7 +22,7 @@ function AboutMe(){
                 <p>
                     As of now, I have the experience of working as a Front-end developer intern 
                     for an iOS<br /> and Android based application. My primary focus these days revolves around
-                    developing<br /> innovative software applications for cloud deployment (<b className="cloud">Cloud-based apps!</b>). 
+                    developing<br /> innovative software applications for cloud deployment ( <b className="cloud">Cloud-based apps!</b> ). 
                 </p>
                 <p>
                     Also, here are some of the technologies that I have utililized and worked with recently:

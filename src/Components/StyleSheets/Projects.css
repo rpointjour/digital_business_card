@@ -1,13 +1,13 @@
 .projects{
     overflow-x: hidden;
-    background-color: #0d141f;
+    background-color: #d6dff0;
 }
 .projects h1{
     position:relative;
     right:300px;
     font-family: 'Inter', sans-serif;
     font-weight:bold;
-    color:#fff;
+    color:black;
 }
 
 .slider{
@@ -15,7 +15,7 @@
     width: 500px;
   }
   .slick-dots li button:before {
-    color:rgb(255, 255, 255);
+    color:black;
     opacity:1;
   }
   .slick-dots li.slick-active button:before {
@@ -28,7 +28,7 @@
     left:350px;
     bottom:350px;
     font-family: 'Inter', sans-serif;
-    color:#fff;
+    color:black;
 }
 
 .featured a{
@@ -65,7 +65,7 @@
   position:relative;
   right:10px;
   bottom:100px;
-  color:#fff;
+  color:black;
 }
 .stockApp{
   border:7px groove #fff;
