@@ -6,6 +6,7 @@ App.css,
 App.test.js
 # StyleSheets
 AboutMe.css,
+Connect.css
 Loader.css,
 Menu.css,
 Projects.css
@@ -13,6 +14,7 @@ SocialMedia.css
 # Other Components
 AboutMe.js,
 Carousel.js,
+Connect.js
 Home.js
 Logo.js,
 Loader.js,
@@ -21,9 +23,10 @@ Projects.js,
 SocialMedia.js,
 Summary.js
 # Dependencies
-react-dom,
+react-router-dom,
 react-scroll,
-react-slick
+react-slick,
+react-tooltip
 # Design Preview
 
 ![home](https://user-images.githubusercontent.com/54840122/202816900-38a9a6f4-ef53-42cc-97ee-d02f2ff723a5.JPG)
