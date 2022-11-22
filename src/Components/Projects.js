@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 
 function Projects(){
     return(
-        <div className="projects">
+        <div className="projects container-fluid">
                 <h1>02. Featured Projects</h1>
                 <br /><br />
                 <Carousel />

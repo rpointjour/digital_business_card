@@ -3,10 +3,10 @@ import './App/App.css';
 function Summary(){
 
 return (
-    <div className="App-summary">
-      <article>
+    <div className="App-summary container-fluid">
+      <article className="container-fluid">
         <h3>
-          <div>
+          <div className="container-fluid">
           Computer Engineer specializing in designing, building, 
           <br />and deploying advanced systems and applications.
           <br />Currently, I am

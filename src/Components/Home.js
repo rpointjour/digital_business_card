@@ -7,7 +7,7 @@ import Summary from './Summary';
 function Home(){
     return (
         <>
-        <div className="Logo-place">
+        <div className="Logo-place container-fluid">
         <img src={Logo} className="App-logo" alt="logo"/>
             <header className= "App-header">
                 <br /><br /><br />

@@ -1,13 +1,14 @@
 import React from "react";
 import './App.css';
+import '../StyleSheets/Scroll.css';
+import AppLogo from '../StyleSheets/Images/logo_dbc.svg';
 import { BrowserRouter, useLocation } from "react-router-dom";
 import { useLayoutEffect } from 'react';
-import Home from '../Home';
-import Menu from '../Menu';
-import AppLogo from '../StyleSheets/Images/logo_dbc.svg';
 import {Link} from "react-scroll";
+import Home from "../Home";
+import Menu from '../Menu';
 import useScrollDirection from '../useScrollDirection';
-import '../StyleSheets/Scroll.css';
+
 
 
 const Wrapper = ({children}) => {
@@ -22,10 +23,10 @@ function App() {
   const scrollDirection = useScrollDirection();
   return (
     <BrowserRouter>
-    <Wrapper>
+    <Wrapper className="container-mt-3">
       <Home />
       <Menu />
-      <div>
+      <div className="container-fluid">
       <div
         style={{
           transform: `translateY(${scrollDirection === 'up' ? 0 : '-100%'})`
@@ -33,7 +34,7 @@ function App() {
         className="scroll-fixed-container scroll-fixed-container--top"
       >
          <img src={AppLogo} className="Page-logo" alt="logo"/>
-        <nav>
+        <nav className="container-fluid">
             <ul>
             <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
             <li className="item"><Link 
