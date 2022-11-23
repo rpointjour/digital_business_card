@@ -22,7 +22,7 @@ export default function Carousel() {
     style={
     {
         position:"relative",
-        right:"288px"
+        right:"4px"
     }}
     >
       <div>

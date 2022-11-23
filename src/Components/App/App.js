@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter, useLocation } from "react-router-dom";
 import { useLayoutEffect } from 'react';
 import Home from "../Home";
+import Menu from "../Menu";
+
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -16,6 +18,7 @@ function App() {
     <BrowserRouter>
     <Wrapper className="container-mt-3">
       <Home />
+      <Menu />
       </Wrapper>
     </BrowserRouter>
   );

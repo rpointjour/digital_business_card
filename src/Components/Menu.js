@@ -8,15 +8,20 @@ function Menu(){
         <>
         <nav>
             <ul className=" menu">
-            <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
             <li className="item"><Link 
             spy={true} 
-            smooth={true}
+            smooth={true} 
+            offset={0} 
+            duration={100} 
+            to="root" 
+            href="#about">Home</Link></li>
+             <li className="item"><Link 
+            spy={true} 
+            smooth={true} 
             offset={5} 
             duration={100} 
-            to="connect" 
-            href="#connect"
-            >Connect</Link></li>
+            to="about" 
+            href="#about">About</Link></li>
             <li className="item"><Link 
             spy={true} 
             smooth={true}
@@ -27,18 +32,13 @@ function Menu(){
             >Projects</Link></li>
             <li className="item"><Link 
             spy={true} 
-            smooth={true} 
+            smooth={true}
             offset={5} 
             duration={100} 
-            to="about" 
-            href="#about">About</Link></li>
-              <li className="item"><Link 
-            spy={true} 
-            smooth={true} 
-            offset={0} 
-            duration={100} 
-            to="root" 
-            href="#about">Home</Link></li>
+            to="connect" 
+            href="#connect"
+            >Connect</Link></li>
+            <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
             </ul>
         </nav>
         </>

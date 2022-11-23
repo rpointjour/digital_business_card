@@ -1,20 +1,11 @@
-.projects{
-    overflow-x: hidden;
-    background-color: #080c13;
-    padding-top:50px;
-}
 #crd_projects{
   width:800px;
   margin-left:auto;
   margin-right:auto;
   padding-top:250px;
 }
-.projects h1{
-    position:relative;
-    right:300px;
-    font-family: 'Inter', sans-serif;
-    font-weight:bold;
-    color:black;
+#projects{
+   padding-bottom:240px;
 }
 
 .slider{
@@ -31,11 +22,10 @@
 }
 
 .featured{
-    position:relative;
-    left:350px;
-    bottom:350px;
     font-family: 'Inter', sans-serif;
     color:black;
+    position:relative;
+    top:120px;
 }
 
 .featured a{
@@ -70,8 +60,7 @@
 
 .stock{
   position:relative;
-  right:10px;
-  bottom:100px;
+  top:210px;
   color:black;
 }
 .stockApp{

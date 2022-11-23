@@ -13,7 +13,7 @@ function Home(){
                 <br /><br /><br />
                 <p>Hi, my name is</p>
                 <h1>Roody Pointjour</h1>
-                <h1>I am a developer.</h1>
+                <h1 id="dev">I am a developer.</h1>
                 <a href="mailto:roody.jerry@yahoo.com" rel="noreferrer" className="email">
                 roody.jerry@yahoo.com
                 </a>

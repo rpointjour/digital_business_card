@@ -37,7 +37,7 @@ function AboutMe(){
                     <ul className=' list-group list-group-flush' id="lst">
                     <li className='list-group-item'></li>
                     <li className='list-group-item'>JavaScript</li>
-                    <li className='list-group-item'>React</li>
+                    <li className='list-group-item active'>React</li>
                     <li className='list-group-item'>Node.js</li>
                     <li className='list-group-item'>C++</li>
                     <li className='list-group-item'>C#</li>

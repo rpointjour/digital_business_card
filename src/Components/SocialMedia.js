@@ -3,10 +3,24 @@ import './StyleSheets/SocialMedia.css';
 
 function SocialMedia(){
     return (
-        <div className = "fa">
-            <a href="https://www.linkedin.com/in/roody-pointjour/" className="fa fa-linkedin" target="_blank" rel="noreferrer"><span id="linked">.</span></a>
-            <a href="https://github.com/rpointjour" className="fa fa-github" target="_blank" rel="noreferrer"><span id="git">.</span></a>
-            <a href="https://www.youtube.com/channel/UC5jL_2GLNFFTLTuoToK9vIg" className="fa fa-youtube" target="_blank" rel="noreferrer"><span id="tube">.</span></a>
+        <div>
+           <a href="https://www.linkedin.com/in/roody-pointjour/" target="_blank" rel="noreferrer"><i style={{fontSize:"40px"}} class="fa">&#xf0e1;</i></a>
+           <a href="https://github.com/rpointjour" target="_blank" rel="noreferrer"><i 
+           style={
+            {fontSize:"40px", 
+            color:"black",
+            position:"relative",
+            top:"70px",
+            right:"36px"
+            }} class="fa">&#xf09b;</i></a>
+            <a href="https://www.youtube.com/channel/UC5jL_2GLNFFTLTuoToK9vIg" target="_blank" rel="noreferrer"><i 
+           style={
+            {fontSize:"40px", 
+            color:"red",
+            position:"relative",
+            top:"135px",
+            right:"71px"
+            }} class="fa">&#xf16a;</i></a>
         </div>
     )
 }
