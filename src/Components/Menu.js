@@ -6,7 +6,7 @@ function Menu(){
    
     return(
         <>
-        <nav>
+        <nav style={{backgroundColor:"#080c13"}}>
             <ul className=" menu">
             <li className="item"><Link 
             spy={true} 

@@ -10,7 +10,7 @@ return (
           Computer Engineer specializing in designing, building, 
           <br />and deploying advanced systems and applications.
           <br />Currently, I am
-          focused on building innovative software technology.
+          focused on building innovative <br />software technology.
           </div>
           </h3>
       </article>
