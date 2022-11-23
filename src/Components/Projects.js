@@ -4,8 +4,9 @@ import Carousel from "./Carousel";
 
 function Projects(){
     return(
-        <div className="projects container-fluid">
-                <h1>02. Featured Projects</h1>
+        <div className="container-fluid" id="crd_projects">
+            <div className="card">
+                <h1 className="card-header">02. Featured Projects</h1>
                 <br /><br />
                 <Carousel />
                 <section className="featured">
@@ -21,6 +22,7 @@ function Projects(){
                 <h3>Distance Reader (Embedded System)</h3><br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/w-XhrnkmF6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="dReader" allowfullscreen></iframe>
                 </div>
+            </div>
         </div>
     );
 }

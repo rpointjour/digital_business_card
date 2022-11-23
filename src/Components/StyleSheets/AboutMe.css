@@ -1,7 +1,5 @@
-.about{
-  background-color: #080c13;
-}
 #crd{
+  width:500px;
   margin-left:auto;
   margin-right:auto;
 }
@@ -10,35 +8,7 @@
   height:400px;
 }
   
-.details{
-    color:black;
-    text-align: justify;
-    font-family: 'Inter', sans-serif;
-    position:relative;
-    left:200px;
-    bottom:250px;
+#lst {
+  list-style-type: none;
 }
-.cloud{
-    color:rgb(249, 249, 253);
-    text-shadow:1px 1px black;
-}
-.tech{
-    list-style-type:square;
-    text-align: justify;
-    font-family: 'Inter', sans-serif;
-    font-weight:600;
-    position:relative;
-    left:200px;
-    bottom:200px;
-    color:black;
-}
-.mtech{
-    list-style-type:square;
-    text-align: justify;
-    font-family: 'Inter', sans-serif;
-    font-weight:600;
-    position:relative;
-    left:420px;
-    bottom:316px;
-    color:black;
-}
+

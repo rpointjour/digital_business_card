@@ -4,7 +4,6 @@ import {Link}from 'react-scroll';
 
 function Menu(){
    
-
     return(
         <>
         <nav>
@@ -40,7 +39,6 @@ function Menu(){
             duration={100} 
             to="root" 
             href="#about">Home</Link></li>
-            
             </ul>
         </nav>
         </>

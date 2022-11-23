@@ -41,7 +41,7 @@
 }
 
   .App-summary{
-    color:black;
+    color:#fff;
     margin: 50px 200px;
     text-align: justify;
     font-family: 'Source Sans Pro', sans-serif;
@@ -60,4 +60,10 @@
     color:rgb(203, 228, 63);
   }
 
+  .appy{
+    margin-top:30px;
+  }
   
+  .active {
+    background-color: #04AA6D;
+  }

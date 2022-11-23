@@ -1,16 +1,8 @@
 import React from "react";
 import './App.css';
-import '../StyleSheets/Scroll.css';
-import AppLogo from '../StyleSheets/Images/logo_dbc.svg';
 import { BrowserRouter, useLocation } from "react-router-dom";
 import { useLayoutEffect } from 'react';
-import {Link} from "react-scroll";
 import Home from "../Home";
-import Menu from '../Menu';
-import useScrollDirection from '../useScrollDirection';
-
-
-
 const Wrapper = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -20,57 +12,10 @@ const Wrapper = ({children}) => {
 } 
 
 function App() {
-  const scrollDirection = useScrollDirection();
   return (
     <BrowserRouter>
     <Wrapper className="container-mt-3">
       <Home />
-      <Menu />
-      <div className="container-fluid">
-      <div
-        style={{
-          transform: `translateY(${scrollDirection === 'up' ? 0 : '-100%'})`
-        }}
-        className="scroll-fixed-container scroll-fixed-container--top"
-      >
-         <img src={AppLogo} className="Page-logo" alt="logo"/>
-        <nav className="container-fluid">
-            <ul>
-            <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true}
-            offset={5} 
-            duration={100} 
-            to="connect" 
-            href="#connect"
-            >Connect</Link></li>
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true}
-            offset={5} 
-            duration={100} 
-            to="projects" 
-            href="#projects"
-            >Projects</Link></li>
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true} 
-            offset={5} 
-            duration={100} 
-            to="about" 
-            href="#about">About</Link></li>
-              <li className="item"><Link 
-            spy={true} 
-            smooth={true} 
-            offset={0} 
-            duration={100} 
-            to="root" 
-            href="#about">Home</Link></li>
-            </ul>
-        </nav>
-      </div>
-    </div>
       </Wrapper>
     </BrowserRouter>
   );

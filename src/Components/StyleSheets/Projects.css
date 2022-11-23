@@ -1,6 +1,13 @@
 .projects{
     overflow-x: hidden;
-    background-color: #d6dff0;
+    background-color: #080c13;
+    padding-top:50px;
+}
+#crd_projects{
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:250px;
 }
 .projects h1{
     position:relative;
