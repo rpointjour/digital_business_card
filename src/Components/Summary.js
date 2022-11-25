@@ -4,9 +4,9 @@ function Summary(){
 
 return (
     <div className="App-summary container-fluid">
-      <article className="container-fluid">
+      <article>
         <h3 className="facts">
-          <div className="container-fluid">
+          <div>
           Computer Engineer specializing in designing, building, 
           <br />and deploying advanced systems and applications.
           <br />Currently, I am

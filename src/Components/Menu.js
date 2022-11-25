@@ -18,14 +18,14 @@ function Menu(){
              <li className="item"><Link 
             spy={true} 
             smooth={true} 
-            offset={5} 
+            offset={95} 
             duration={100} 
             to="about" 
             href="#about">About</Link></li>
             <li className="item"><Link 
             spy={true} 
             smooth={true}
-            offset={5} 
+            offset={245} 
             duration={100} 
             to="projects" 
             href="#projects"
@@ -33,7 +33,7 @@ function Menu(){
             <li className="item"><Link 
             spy={true} 
             smooth={true}
-            offset={5} 
+            offset={350} 
             duration={100} 
             to="connect" 
             href="#connect"

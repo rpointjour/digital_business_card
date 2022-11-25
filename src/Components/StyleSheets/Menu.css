@@ -17,7 +17,8 @@
 .item {
   float: right;
 }
-
+@media screen and (min-width:600px)
+{
 .item a {
   display: flex;
   flex-direction: row;
@@ -26,11 +27,33 @@
   padding: 14px 16px;
   text-decoration: none;
 }
+}
+
+@media screen and (max-width:494px)
+{
+  .item a{
+    padding: 4px 2px;
+    font-size:3vw;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:495px)
+{
+  .item a{
+    padding: 5px 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-align: center;
+  }
+}
 
 .item a:hover {
   background-color: rgb(125, 145, 53);
-}
-
-.active {
-  background-color: #4c82af;
 }

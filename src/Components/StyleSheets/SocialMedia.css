@@ -8,7 +8,11 @@
     border-radius: 50%;
     float:left;
     display:block;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+ }
+ .fa:hover{
+    transform:rotate(90deg);
  }
 @media screen and (max-width:494px)
 {

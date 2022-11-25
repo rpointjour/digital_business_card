@@ -4,6 +4,13 @@
   padding-top:250px;
 }
 
+@media screen and (min-width:495px)
+{
+  #crd_projects{
+    width:500px;
+  }
+}
+
 #projects{
    padding-bottom:240px;
 }

@@ -1,7 +1,9 @@
 .App-logo {
   height: 15vmin;
   pointer-events: none;
-  float:left;
+  position:fixed;
+  mix-blend-mode:difference;
+  z-index: 300;
 }
 *{
   box-sizing: border-box;
@@ -83,6 +85,37 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (min-width:600px) 
+{
+  .App-summary{
+    color:black;
+    display:flex;
+    position:relative;
+    bottom:50px !important;
+    left:0 !important;
+    white-space: nowrap;
+  }  
+  .facts{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:8vw !important;
+  }
+}
+@media screen and (min-width:495px) 
+{
+  .App-summary{
+    color:black;
+    display:flex;
+    position:relative;
+    bottom:50px !important;
+    right:140px !important;
+    white-space: nowrap;
+  }  
+  .facts{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:5vw !important;
+  }
+}
 @media screen and (max-width:494px)
 {
   .App-summary{
@@ -92,10 +125,11 @@
     right:30px;
   }
   .facts{
-    padding-top:10px;
+    padding-top:80px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:5vw !important;
+    white-space:nowrap;
+    font-size:4vw !important;
     position:relative;
     right:80px;
   }

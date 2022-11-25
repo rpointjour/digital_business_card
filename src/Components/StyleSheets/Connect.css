@@ -10,12 +10,13 @@ body{
 .connect{
     background-color: #f3f3f3;
     color:black;
-    padding-top: 220px;
+    padding-top: 10px;
     padding-bottom:0;
     position:relative;
-    bottom:0;
+    bottom:70px !important;
     font-family:'Inter', sans-serif;
-    height:100vmin;
+    text-align: center;
+    height:80vmin;
     width:100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -43,59 +44,5 @@ body{
 .credits{
   font-size:14px;
   font-family:'Inter', sans-serif;
-  position:relative;
-  left:5px;
-  top:30px;
-  margin:0;
-  padding-bottom:20px;
+  text-align: center;
 }
-.af {
-    display:flex;
-    padding: 15px;
-    font-size: 15px;
-    width:15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    position:relative;
-    left:590px;
-    
-  }
-  
-  .af-linkedin {
-    background: #010b0f;
-    color: white;
-  }
-
-  .af-linkedin:hover{
-    background:#007bb5;
-  }
-
-  #linked{
-    color:#007bb5;
-    opacity: 0.01;
-  }
-  
-  .afyoutube {
-    background: #010b0f;
-    color: white;
-  }
-  .af-youtube:hover{
-    background: #bb0000;
-  }
-  #tube{
-    color:#010b0f;
-    opacity: 0.01;
-  }
-
-  .af-github{
-    background:#182635;
-    color:white;
-  }
-  .af-github:hover{
-    background:#010b0f;
-  }
-  #git{
-    color: #010b0f;
-    opacity: 0.01;
-  }
