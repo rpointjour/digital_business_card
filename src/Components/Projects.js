@@ -11,7 +11,7 @@ function Projects(){
                 <Carousel />
                 <br />
                 <section className="featured text-light">
-                <h3>Turtlebot3 Waffle Pi (Leader-Follower)</h3><br />
+                <h3>Turtlebot3 Waffle Pi</h3><br />
                 <button type="button"><a href="http://localhost:3000/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
                 <br /><br />
                 </section><br />
@@ -20,7 +20,7 @@ function Projects(){
                 <h3>Stock App (Android Studio)</h3><br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/m-GYSwUPJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="stockApp container-sm w-60" allowfullscreen></iframe>
                 </div><br /><br />
-                <h3>Distance Reader (Embedded System)</h3><br />
+                <h3>Distance Reader</h3><br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/w-XhrnkmF6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="dReader container-sm w-60" allowfullscreen></iframe>
                 </div>
             </div>

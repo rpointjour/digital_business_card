@@ -76,6 +76,28 @@
   right:130px;
 }
 }
+@media screen and (max-width:300px)
+{
+  .App-header h1{
+    font-size:10vw !important;
+    color: white;
+    position:relative;
+    right:120px;
+  }
+
+  .App-header p{
+    font-size:7vw !important;
+    position:relative;
+    right:120px;
+    color:rgb(125, 145, 53);
+  }
+
+  #dev{
+    position:relative;
+    right:120px;
+  }
+
+}
 
 @keyframes App-logo-spin{
   from {

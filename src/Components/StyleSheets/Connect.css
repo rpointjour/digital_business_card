@@ -21,7 +21,7 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.connect button{
+.contact{
   display: inline-block;
   padding: 15px 20px;
   font-size: 24px;
@@ -38,7 +38,7 @@ body{
   text-decoration: none;
   color:#fff;
 }
-.connect button:hover{
+.contact:hover{
   background-color: #00bb28;
 }
 .credits{

@@ -21,7 +21,7 @@
     display:flex;
   }
   .slick-dots li button:before {
-    color:black;
+    color:#fff;
     opacity:1;
   }
   .slick-dots li.slick-active button:before {

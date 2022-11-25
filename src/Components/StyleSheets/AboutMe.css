@@ -6,6 +6,11 @@
   width:400px;
   height:400px;
 }
+
+.cloud{
+  position:relative;
+  left:8px;
+}
   
 #lst {
   list-style-type: none;
@@ -16,10 +21,56 @@
   #crd{
     width:500px;
   }
+  article{
+    white-space: wrap;
+    font-size:22px;
+    text-align-last:left;
+    padding-bottom:25px;
+  }
 }
-article{
-  white-space: wrap;
-  font-size:22px;
-  text-align-last:left;
-  padding-bottom:25px;
+
+@media screen and (max-width:494px)
+{
+  article{
+    white-space: wrap;
+    font-size:5vw;
+    text-align:start;
+    text-align-last:left;
+    line-height: 1.2;
+  }
+  #proj{
+   position:relative;
+   left:2px !important;
+}
+#java{
+  text-align: justify;
+  position:relative;
+  left:2px !important;
+}
+#lang{
+  position: inherit;
+  left:2px !important;
+}
+#around{
+  position: inherit;
+  right:2px !important;
+}
+#soft{
+  position:inherit;
+  left:2px !important;
+}
+#as{
+  position:inherit;
+  right:2px !important;
+}
+}
+
+@media screen and (max-width:300px)
+{
+  #here{
+    font-size: 4vw;
+  }
+  #tech{
+    font-size: 4vw;
+  }
 }

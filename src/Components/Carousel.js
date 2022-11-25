@@ -43,7 +43,7 @@ export default function Carousel() {
             fontFamily:"Inter",
             color:"black"
         }}
-        ><b className="text-light">Turtlebot3 Waffle Pi (Leader-Follower)</b></h3>
+        ><b className="text-light">Turtlebot3 Waffle Pi</b></h3>
       </div>
       <div>
       <img src={stockHome} alt="Stock App" 
@@ -83,7 +83,7 @@ export default function Carousel() {
             fontFamily:"Inter",
             color:"black"
         }}
-        ><b className="text-light">Distance Reader (Embedded System)</b></h3>
+        ><b className="text-light">Distance Reader</b></h3>
       </div>
     </Slider>
     </>
