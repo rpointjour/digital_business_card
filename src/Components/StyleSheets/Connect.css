@@ -1,0 +1,48 @@
+html,
+body{
+  width:100%;
+  overflow-x:hidden;
+}
+*{
+  box-sizing: border-box;
+}
+
+.connect{
+    background-color: #f3f3f3;
+    color:black;
+    padding-top: 10px;
+    padding-bottom:0;
+    position:relative;
+    bottom:70px !important;
+    font-family:'Inter', sans-serif;
+    text-align: center;
+    height:80vmin;
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.contact{
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #2000ad;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(3, 0, 0);
+}
+.connect a{
+  text-decoration: none;
+  color:#fff;
+}
+.contact:hover{
+  background-color: #00bb28;
+}
+.credits{
+  font-size:14px;
+  font-family:'Inter', sans-serif;
+  text-align: center;
+}

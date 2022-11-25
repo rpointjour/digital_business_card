@@ -1,0 +1,26 @@
+.fa {
+    padding: 15px;
+    font-size: 15px;
+    width:30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float:left;
+    display:block;
+    transition: transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+ }
+ .fa:hover{
+    transform:rotate(90deg);
+ }
+@media screen and (max-width:494px)
+{
+    .fa{
+        font-size:7vw !important;
+        position:relative;
+        top:190px;
+        left:120px;
+        z-index:1;
+    }
+}

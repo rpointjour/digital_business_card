@@ -1,0 +1,58 @@
+.wrapper {
+  width: 152px;
+  height: 152px;
+}
+.loader {
+  width: 150px;
+  height: 150px;
+  border: 12px solid #480baa;
+  border-radius: 50%;
+  border-top: 12px solid #003ca5;
+  border-bottom:12px solid #003ca5;
+  border-left: 12px solid black;
+  border-right:12px solid black;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+.wrapper {
+  background: url('./Images/rjp.png') center no-repeat;
+  background-size:50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -76px 0 0 -76px;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myPage {
+  display: none;
+  text-align: center;
+}
