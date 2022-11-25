@@ -3,6 +3,9 @@
   pointer-events: none;
   float:left;
 }
+*{
+  box-sizing: border-box;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -21,19 +24,55 @@
   margin-left: 94px;
   padding:20px;
 }
-.App-header h1{
-  font-size: calc(48px + 2vmin) !important;
-  color: white;
-}
+@media screen and (min-width:495px)
+{
 .App-header p{
   font-size:28px !important;
+  color:rgb(125, 145, 53);
+  position:relative;
+  right:130px;
+}
+}
+
+@media screen and (min-width:495px)
+{
+  .App-header h1{
+    font-size: calc(48px + 2vmin) !important;
+    color:#fff;
+  }
+}
+@media screen and (min-width:495px)
+{
+  #dev{
+    color:#fff;
+    position:relative;
+    left:12px;
+  }
+}
+@media screen and (max-width:494px)
+{
+.App-header h1{
+  font-size:10vw !important;
+  color: white;
+  position:relative;
+  right:140px;
+}
+}
+@media screen and (max-width: 494px )
+{
+.App-header p{
+  font-size:7vw !important;
   position:relative;
   right:130px;
   color:rgb(125, 145, 53);
 }
+}
+@media screen and (max-width:494px)
+{
 #dev{
   position:relative;
-  left:12px;
+  right:130px;
+}
 }
 
 @keyframes App-logo-spin{
@@ -44,31 +83,23 @@
     transform: rotate(360deg);
   }
 }
-
+@media screen and (max-width:494px)
+{
   .App-summary{
     color:black;
-    margin: 50px 200px;
-    text-align: justify;
+    margin: 1px 100px;
     position:relative;
     right:30px;
   }
   .facts{
+    padding-top:10px;
+    text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size:20px !important;
+    font-size:5vw !important;
     position:relative;
-    left:20px;
+    right:80px;
   }
-  .email{
-    position: absolute;
-    bottom: 263px;
-    right: 40px;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  .email:hover{
-    color:rgb(203, 228, 63);
-  }
+}
 
   @keyframes develop{
     0%{
@@ -112,4 +143,31 @@
     animation-timing-function: linear;
     animation-delay:-6;
     animation-direction: reverse;
+  }
+
+  @media screen and (min-width:495px)
+  {
+    .App-summary{
+      color:black;
+      margin: 50px 200px;
+      text-align: justify;
+      position:relative;
+      right:30px;
+    }
+    .facts{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size:20px !important;
+      position:relative;
+      left:20px;
+    }
+    .fa.git{
+      position:relative;
+      top:50px;
+      right:35px;
+    }
+    .fa.youtube{
+      position:relative;
+      top:100px;
+      right:72px;
+    }
   }

@@ -3,6 +3,9 @@ body{
   width:100%;
   overflow-x:hidden;
 }
+*{
+  box-sizing: border-box;
+}
 
 .connect{
     background-color: #f3f3f3;
@@ -15,6 +18,7 @@ body{
     height:100vmin;
     width:100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .connect button{
   display: inline-block;

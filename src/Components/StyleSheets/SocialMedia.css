@@ -10,4 +10,13 @@
     display:block;
 
  }
-  
+@media screen and (max-width:494px)
+{
+    .fa{
+        font-size:7vw !important;
+        position:relative;
+        top:190px;
+        left:120px;
+        z-index:1;
+    }
+}

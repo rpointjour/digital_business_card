@@ -1,5 +1,4 @@
 #crd_projects{
-  width:800px;
   margin-left:auto;
   margin-right:auto;
   padding-top:250px;
@@ -12,6 +11,7 @@
 .slider{
     margin: 60px auto;
     width: 500px;
+    display:flex;
   }
   .slick-dots li button:before {
     color:black;
@@ -65,6 +65,8 @@
   color:black;
 }
 .stockApp{
+  width:560;
+  height:315;
   border:7px groove #fff;
   border-radius: 5px;
   outline:0px groove #fff;
@@ -72,8 +74,12 @@
 }
 
 .dReader{
+  width:560;
+  height:315;
   border:7px groove #fff;
   border-radius: 5px;
   outline:0px groove #fff;
   outline-offset: 1px;
 }
+
+

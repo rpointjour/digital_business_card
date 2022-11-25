@@ -5,20 +5,20 @@ import ReactTooltip from "react-tooltip";
 function AboutMe(){
     return(
     <div className='container-fluid'>
-        <div class="card" id="crd">
-            <h1 className='card-header'>01. About Me</h1>
-            <div class="card-body">
+        <div class="card container-sm" id="crd">
+            <h1 className='card-header container-sm'>01. About Me</h1>
+            <div class="card-body container-sm">
                 <img src={Roody} alt="Roody Pointjour" data-tip data-for="imageTip" className='card-img-top img-thumbnail img-fluid' id="me"/>
                 <ReactTooltip id="imageTip" place="right" effect="solid" arrowColor='black'>
                 Nice to meet you!
                 </ReactTooltip>
                 <br />
-                <h4 className='card-title'
+                <h4 className='card-title container-sm'
                 style={{
                     paddingTop:"6px"
                 }}
                 >Roody Pointjour</h4><br />
-                <article>
+                <article className='container-sm'>
                     <p className='card-text'>
                     Hello! My name is Roody and I have a passion
                     for developing cool and exciting projects. <br />My initerest
