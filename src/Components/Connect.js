@@ -6,7 +6,7 @@ function Connect(){
         <>
         <footer className="connect container-fluid">
             <h3>03. Don't Be Afraid To Reach Out! 
-            <div class="toast bg-dark text-light show">
+            <div class="toast bg-dark text-light show mytoast">
   <div class="toast-header bg-secondary text-light">
     Thanks for visiting my page!
     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>

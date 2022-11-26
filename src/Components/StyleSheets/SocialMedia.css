@@ -12,7 +12,7 @@
 
  }
  .fa:hover{
-    transform:rotate(90deg);
+    transform:rotate(-90deg);
  }
 @media screen and (max-width:494px)
 {

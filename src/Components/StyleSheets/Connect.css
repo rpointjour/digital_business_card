@@ -6,7 +6,20 @@ body{
 *{
   box-sizing: border-box;
 }
-
+@media screen and (max-width:494px)
+{
+.mytoast{
+margin-left:auto;
+margin-right:auto;
+}
+}
+@media screen and (min-width:495px)
+{
+.mytoast{
+margin-left:auto;
+margin-right:auto;
+}
+}
 .connect{
     background-color: #f3f3f3;
     color:black;

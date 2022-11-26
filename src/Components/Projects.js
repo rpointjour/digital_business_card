@@ -5,14 +5,14 @@ import Carousel from "./Carousel";
 function Projects(){
     return(
         <div className='container-fluid' id="crd_projects">
-        <div class="card container-sm bg-primary" id="projects">
-            <h1 className='card-header container-sm text-light'>02. Featured Projects</h1>
+        <div class="card container-sm" id="projects">
+            <h1 className='card-header container-sm bg-dark text-light'>02. Featured Projects</h1>
             <div class="card-body container-sm">
                 <Carousel />
                 <br />
                 <section className="featured text-light">
                 <h3>Turtlebot3 Waffle Pi</h3><br />
-                <button type="button"><a href="http://localhost:3000/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
+                <button type="button"><a href="/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
                 <br /><br />
                 </section><br />
                 <div className="stock text-light">

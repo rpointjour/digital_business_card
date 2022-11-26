@@ -63,6 +63,12 @@
   position:inherit;
   right:2px !important;
 }
+#here{
+  font-size: 4vw;
+}
+#tech{
+  font-size: 4vw;
+}
 }
 
 @media screen and (max-width:300px)
