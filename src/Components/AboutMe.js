@@ -35,7 +35,7 @@ function AboutMe(){
                     for an iOS and Android based application.<br /><br/> My primary focus these days revolves <span id='around' style={{position:"relative", right:"8px"}}>around developing innovative</span> software <span id='soft' style={{position:"relative", left:"12px"}}>applications for cloud deployment</span><br /><b className="cloud text-warning">( Cloud-based apps! )</b>
                     </p>
                     <p className='card-text text-light'>
-                    <br /><span id='here' style={{whiteSpace:"nowrap", textAlign:"left"}}>Here are some of the technologies</span><span id='tech'  style={{whiteSpace:"nowrap", textAlignLast:"left"}}>that I have utililized and worked with:</span>
+                    <br />Recently I have been working with these technologies:
                     </p>
                     <ul className=' list-group list-group-flush' id="lst">
                     <li className='list-group-item list-group-item-success'></li>

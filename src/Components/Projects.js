@@ -10,12 +10,12 @@ function Projects(){
             <div class="card-body container-sm">
                 <Carousel />
                 <br />
-                <section className="featured text-light">
+                <section className="featured text-light"><hr />
                 <h3>Turtlebot3 Waffle Pi</h3><br />
                 <button type="button"><a href="/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
                 <br /><br />
                 </section><br />
-                <div className="stock text-light">
+                <div className="stock text-light"><hr />
                 <div>
                 <h3>Stock App (Android Studio)</h3><br />
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/m-GYSwUPJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="stockApp container-sm w-60" allowfullscreen></iframe>

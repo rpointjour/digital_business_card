@@ -4,6 +4,7 @@ function Summary(){
 
 return (
     <div className="App-summary container-fluid">
+      <a href="/Resume/Roody-Pointjour-Resume.pdf" id="resume" className="btn btn-link active btn-warning text-dark btn-outline-warning">Resume</a>
       <article>
         <h3 className="facts">
           <div>
