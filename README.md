@@ -1,41 +1,103 @@
-# Design Process: Final Design
-This branch is dedicated to the Final Design for the Digital Business Card
-# App Components
-App.js,
-App.css,
+# My Digital Business Card (rpointjour.com)
+This app was created using the React JavaScript library & Create React App!
+
+Hosted through AWS Amplify.
+
+![rpointjour_home](https://user-images.githubusercontent.com/54840122/204167079-b18157b8-d553-4a27-a412-1e74e173914c.JPG)
+
+## Design Process: Final Design
+Initial Design, Prototype, Final Design
+
+Which are also included in their respective branches.
+
+## App Process + Version Control Integration
+1. Created directory for digital business card
+2. Installed Create React App
+
+```
+npx create-react-app my-react-app
+```
+
+3. Changed directory to my-react-app
+
+```
+cd my-react-app
+```
+
+4. Started development environment
+
+```
+npm start
+```
+
+5. Initialized Git Repository
+6. Added repository to Github
+7. Updated code and made changes
+## App Components
+App.js
+
+App.css
+
 App.test.js
-# StyleSheets
-AboutMe.css,
+## StyleSheets
+AboutMe.css
+
 Connect.css
-Loader.css,
-Menu.css,
+
+Loader.css
+
+Menu.css
+
 Projects.css
+
 SocialMedia.css
-# Other Components
-AboutMe.js,
-Carousel.js,
+
+## Other Components
+AboutMe.js
+
+Carousel.js
+
 Connect.js
+
 Home.js
-Logo.js,
-Loader.js,
-Menu.js,
-Projects.js,
-SocialMedia.js,
+
+Logo.js
+
+Loader.js
+
+Menu.js
+
+Projects.js
+
+SocialMedia.js
+
 Summary.js
-# Dependencies
-react-router-dom,
-react-scroll,
-react-slick,
+
+## Additional Dependencies
+react-scroll
+
+react-slick
+
 react-tooltip
-# Design Preview
 
-![home](https://user-images.githubusercontent.com/54840122/202816900-38a9a6f4-ef53-42cc-97ee-d02f2ff723a5.JPG)
+## Digital Business Card Preview
 
-![about](https://user-images.githubusercontent.com/54840122/202816920-0c8fae42-03a1-4b2c-906e-36db7928d902.JPG)
+**Home**
 
-![projects](https://user-images.githubusercontent.com/54840122/202816937-2b4a415e-2681-4ecc-b118-65623de92174.JPG)
+![rpointjour_home](https://user-images.githubusercontent.com/54840122/204167831-9de775f7-b2f8-40bd-a567-b5e1c18ea61e.JPG)
 
-![navigation_menu](https://user-images.githubusercontent.com/54840122/202891394-46d1cf36-c887-4d1c-bec8-556719ea3430.JPG)
+**About Me**
+
+![rpointjour_aboutme](https://user-images.githubusercontent.com/54840122/204167957-3f4de9e2-5065-45c5-bf57-c3f55189d4a0.JPG)
+
+**Projects**
+
+![rpointjour_projects](https://user-images.githubusercontent.com/54840122/204168166-0f381a2c-ce76-41fb-b370-f2c1a50501ee.JPG)
+
+
+
+
+
 
 
 
