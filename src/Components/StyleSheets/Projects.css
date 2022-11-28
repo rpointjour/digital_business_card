@@ -3,9 +3,6 @@
   margin-right:auto;
   padding-top:250px;
 }
-#projects{
-  background-color: #080c13;
-}
 
 @media screen and (min-width:495px)
 {
@@ -91,5 +88,4 @@
   outline:0px groove #fff;
   outline-offset: 1px;
 }
-
 

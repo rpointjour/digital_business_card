@@ -1,6 +1,6 @@
 import React from "react";
 import './StyleSheets/SocialMedia.css';
-// Return Social Media icons using Unicode
+
 function SocialMedia(){
     return (
         <div>

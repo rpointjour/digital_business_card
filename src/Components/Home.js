@@ -3,11 +3,7 @@ import './App/App.css';
 import Logo from './StyleSheets/Images/logo_dbc.svg';
 import SocialMedia from './SocialMedia';
 import Summary from './Summary';
-/*Home Component
-- Places the App Logo at a fixed position on the top left of the screen
-- Includes App Header and 'developer animation'
-- Also includes SocialMedia + Summary components to also be rendered
-*/
+
 function Home(){
     return (
         <>

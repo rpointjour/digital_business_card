@@ -125,9 +125,6 @@
 }
 @media screen and (min-width:495px) 
 {
-  #resume{
-    display:none;
-  }
   .App-summary{
     color:black;
     display:flex;
@@ -143,10 +140,6 @@
 }
 @media screen and (max-width:494px)
 {
-  #resume{
-    text-decoration: none;
-    text-align: center;
-  }
   .App-summary{
     color:black;
     margin: 1px 100px;

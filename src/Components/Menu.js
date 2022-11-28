@@ -1,16 +1,12 @@
 import React from "react";
 import "../Components/StyleSheets/Menu.css";
 import {Link}from 'react-scroll';
-/* Menu Component
-- Utilizes Link hook from react-scroll for menu navigation items
-- Enabled smooth scrolling through page
-- Menu is only visible for device screens larger than mobile
-*/
+
 function Menu(){
    
     return(
         <>
-        <nav>
+        <nav style={{backgroundColor:"#080c13"}}>
             <ul className=" menu">
             <li className="item"><Link 
             spy={true} 
@@ -42,7 +38,7 @@ function Menu(){
             to="connect" 
             href="#connect"
             >Connect</Link></li>
-            <li className="item"><a href="/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+            <li className="item"><a href="http://localhost:3000/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
             </ul>
         </nav>
         </>

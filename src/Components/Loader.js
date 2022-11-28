@@ -1,21 +1,21 @@
 import './StyleSheets/Loader.css';
 
-var myLoader;
-// Function to display page without wrapper or loader
+var myVar;
+
 function showPage(){
     document.getElementById('wrapper').style.display="none";
     document.getElementById('loader').style.display = "none";
     document.getElementById('myPage').style.display="block";
 }
-// Function to set time out on loader
-function showLoader()
+
+function myFunction()
 {
-    myLoader = setTimeout(showPage, 3000);
-    return myLoader;
+    myVar = setTimeout(showPage, 3000);
+    return myVar;
 }
-// Loader component to display the loader
+
 function Loader(){
-    showLoader();
+    myFunction();
 }
 
 export default Loader;
