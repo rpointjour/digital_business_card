@@ -1,51 +1,16 @@
-import React from "react";
-import "../Components/StyleSheets/Menu.css";
-import {Link}from 'react-scroll';
-/* Menu Component
-- Utilizes Link hook from react-scroll for menu navigation items
-- Enabled smooth scrolling through page
-- Menu is only visible for device screens larger than mobile
-*/
+import './StyleSheets/Menu.css';
+
 function Menu(){
-   
     return(
-        <>
-        <nav>
-            <ul className=" menu">
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true} 
-            offset={0} 
-            duration={100} 
-            to="root" 
-            href="#about">Home</Link></li>
-             <li className="item"><Link 
-            spy={true} 
-            smooth={true} 
-            offset={95} 
-            duration={100} 
-            to="about" 
-            href="#about">About</Link></li>
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true}
-            offset={245} 
-            duration={100} 
-            to="projects" 
-            href="#projects"
-            >Projects</Link></li>
-            <li className="item"><Link 
-            spy={true} 
-            smooth={true}
-            offset={350} 
-            duration={100} 
-            to="connect" 
-            href="#connect"
-            >Connect</Link></li>
-            <li className="item"><a href="/Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
+        <nav className="menu">
+            <ul>
+            <li><a href="localhost:3000/src/Components/Resume/Roody-Pointjour-Resume.pdf" className="Resume">Resume</a></li>
+            <li><a href="#contact">04. Contact</a></li>
+            <li><a href="#dev">03. In Development</a></li>
+            <li><a href="#projects">02. Projects</a></li>
+            <li><a className="active" href="#about">01. About</a></li>
             </ul>
         </nav>
-        </>
     );
 }
 
