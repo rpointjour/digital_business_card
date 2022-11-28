@@ -21,10 +21,10 @@ function Projects(){
                 <div className="stock text-light"><hr />
                 <div>
                 <h3>Stock App (Android Studio)</h3><br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/m-GYSwUPJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="stockApp container-sm w-60" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m-GYSwUPJE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="stockApp container-sm w-60" allowFullScreen></iframe>
                 </div><br /><br />
                 <h3>Distance Reader</h3><br />
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/w-XhrnkmF6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="dReader container-sm w-60" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w-XhrnkmF6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" className="dReader container-sm w-60" allowFullScreen></iframe>
                 </div>
             </div>
         </div>

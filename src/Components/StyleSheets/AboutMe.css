@@ -26,7 +26,20 @@
     font-size:22px;
     text-align-last:left;
     padding-bottom:25px;
+    margin:0;
   }
+  .hello{
+    position:relative;
+    left:6px !important;
+}
+#around{
+  position: relative;
+  right:10px !important;
+}
+.tech{
+  position:relative;
+  left:14px !important;
+}
 }
 
 @media screen and (max-width:494px)
