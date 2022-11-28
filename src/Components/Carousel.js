@@ -3,7 +3,12 @@ import Slider from "react-slick";
 import turtlebot3 from "./StyleSheets/Images/turtlebot3_waffle_pi.jpg";
 import stockHome from "./StyleSheets/Images/stock_home.JPG";
 import dReader from "./StyleSheets/Images/distance_reader.JPG";
-
+/*Carousel Component
+- Used react-slick Slider for App Carousel
+- Customized Carousel settings as an object property
+- Returned Slider with Carousel settings
+- Included images for Carousel
+*/
 export default function Carousel() {
   var settings = {
     dots:true,

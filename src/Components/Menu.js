@@ -1,7 +1,11 @@
 import React from "react";
 import "../Components/StyleSheets/Menu.css";
 import {Link}from 'react-scroll';
-
+/* Menu Component
+- Utilizes Link hook from react-scroll for menu navigation items
+- Enabled smooth scrolling through page
+- Menu is only visible for device screens larger than mobile
+*/
 function Menu(){
    
     return(

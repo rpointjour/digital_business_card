@@ -1,7 +1,13 @@
 import './StyleSheets/AboutMe.css';
 import Roody from './StyleSheets/Images/Roody Pointjour Oct 2022-8.jpg';
 import ReactTooltip from "react-tooltip";
-
+/*AboutMe Component
+- Styled CSS according to different screen sizes
+- Used media queries to align text more appropriately
+- Assigned Ids to different parts of the section
+- Utilized ReactTooltip to display a tooltip over my image
+- Included bootstrap class list-group for technologies section
+*/
 function AboutMe(){
     return(
     <div className='container-fluid'

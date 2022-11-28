@@ -1,6 +1,9 @@
 import React from "react";
 import "./StyleSheets/Connect.css";
-
+/*Connect Component
+- Utilized for App Footer
+- Includes bootstrap toast class for toast message
+*/
 function Connect(){
     return(
         <>

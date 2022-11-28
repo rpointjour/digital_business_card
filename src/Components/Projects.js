@@ -1,7 +1,10 @@
 import React from "react";
 import './StyleSheets/Projects.css';
 import Carousel from "./Carousel";
-
+/* Projects Component
+- Includes Carousel Component for react-slick carousel
+- Utilizes bootstrap card class
+*/
 function Projects(){
     return(
         <div className='container-fluid' id="crd_projects">
