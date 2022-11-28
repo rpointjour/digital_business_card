@@ -1,23 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import turtlebot3 from "./StyleSheets/Images/turtlebot3_waffle_pi.jpg";
-import stockHome from "./StyleSheets/Images/stock_home.JPG";
-import dReader from "./StyleSheets/Images/distance_reader.JPG";
-/*Carousel Component
-- Used react-slick Slider for App Carousel
-- Customized Carousel settings as an object property
-- Returned Slider with Carousel settings
-- Included images for Carousel
-*/
+import turtlebot3 from "./StyleSheets/Images/turtlebot3_waffle_pi.jpg"
+
 export default function Carousel() {
   var settings = {
-    dots:true,
-    arrows:false,
+    dots: true,
+    arrows:true,
     infinite: true,
-    fade:true,
-    speed: 1500,
-    autoplay:true,
-    autoplaySpeed:10000,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
   };
@@ -27,7 +17,7 @@ export default function Carousel() {
     style={
     {
         position:"relative",
-        right:"4px"
+        right:"328px"
     }}
     >
       <div>
@@ -42,53 +32,13 @@ export default function Carousel() {
             borderRadius:"5px"
         }} 
         />
-        <h3
-        style={
-          {
-            fontFamily:"Inter",
-            color:"black"
-        }}
-        ><b className="text-light">Turtlebot3 Waffle Pi</b></h3>
+        <h3>Turtlebot3 Waffle Pi (Leader-Follower)</h3>
       </div>
       <div>
-      <img src={stockHome} alt="Stock App" 
-        style={
-        {
-            width:275, 
-            height:400, 
-            display:"block",
-            marginLeft:"auto",
-            marginRight:"auto",
-            borderRadius:"5px"
-        }} 
-        />
-        <h3
-        style={
-          {
-            fontFamily:"Inter",
-            color:"black"
-        }}
-        ><b className="text-light">My Stock App</b></h3>
+        <h3>2</h3>
       </div>
       <div>
-      <img src={dReader} alt="Distance Reader" 
-        style={
-        {
-            width:275, 
-            height:400, 
-            display:"block",
-            marginLeft:"auto",
-            marginRight:"auto",
-            borderRadius:"5px"
-        }} 
-        />
-        <h3
-        style={
-          {
-            fontFamily:"Inter",
-            color:"black"
-        }}
-        ><b className="text-light">Distance Reader</b></h3>
+        <h3>3</h3>
       </div>
     </Slider>
     </>

@@ -1,7 +1,0 @@
-[{
-    "relation": ["lookalikes/allowlist"],
-    "target" : { "namespace": "web", "site": "https://rpointjour.com"}
-  },{
-    "relation": ["lookalikes/allowlist"],
-    "target" : { "namespace": "web", "site": "https://rjpointjour.com"}
-  }]

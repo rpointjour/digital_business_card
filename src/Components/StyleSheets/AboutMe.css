@@ -1,66 +1,39 @@
-#crd{
-  margin-left:auto;
-  margin-right:auto;
+.about{
+  background-color: #d6eaf0;
+  height:120vmin;
 }
-#me{
-  width:400px;
-  height:400px;
-}
-
-.cloud{
+.about img{
+  width:300px;
+  height:300px;
+  border-radius: 5px;
   position:relative;
-  left:8px;
+  left:375px;
+  top:87px;
 }
-  
-#lst {
-  list-style-type: none;
+.about img:hover{
+  opacity:0.8;
+  cursor:help;
 }
-
-@media screen and (min-width:495px)
-{
-  #crd{
-    width:500px;
-  }
-  article{
-    white-space: wrap;
-    font-size:22px;
-    text-align-last:left;
-    padding-bottom:25px;
-  }
-}
-
-@media screen and (max-width:494px)
-{
-  article{
-    white-space: wrap;
-    font-size:5vw;
-    text-align:start;
-    text-align-last:left;
-    line-height: 1.2;
-  }
-  #proj{
-   position:relative;
-   left:2px !important;
-}
-#java{
+.details{
   text-align: justify;
   position:relative;
-  left:2px !important;
+  left:200px;
+  bottom:250px;
 }
-#lang{
-  position: inherit;
-  left:2px !important;
+.cloud{
+  color:rgb(10, 83, 83);
 }
-#around{
-  position: inherit;
-  right:2px !important;
+.tech{
+  list-style-type:square;
+  text-align: justify;
+  position:relative;
+  left:200px;
+  bottom:200px;
 }
-#soft{
-  position:inherit;
-  left:2px !important;
-}
-#as{
-  position:inherit;
-  right:2px !important;
-}
+.mtech{
+  list-style-type:square;
+  text-align: justify;
+  position:relative;
+  left:420px;
+  bottom:319px;
 }

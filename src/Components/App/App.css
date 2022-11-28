@@ -1,12 +1,12 @@
-.App-logo {
-  height: 15vmin;
-  pointer-events: none;
-  position:fixed;
-  mix-blend-mode:difference;
-  z-index: 300;
+.App {
+  background-color: #080c13;
+  height:50vmin;
 }
-*{
-  box-sizing: border-box;
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  float:left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,81 +22,13 @@
 
 .App-header {
   min-height: 50vh;
-  margin-top: 10px;
-  margin-left: 94px;
-  padding:20px;
-}
-@media screen and (min-width:495px)
-{
-.App-header p{
-  font-size:28px !important;
-  color:rgb(125, 145, 53);
-  position:relative;
-  right:130px;
-}
-}
-
-@media screen and (min-width:495px)
-{
-  .App-header h1{
-    font-size: calc(48px + 2vmin) !important;
-    color:#fff;
-  }
-}
-@media screen and (min-width:495px)
-{
-  #dev{
-    color:#fff;
-    position:relative;
-    left:12px;
-  }
-}
-@media screen and (max-width:494px)
-{
-.App-header h1{
-  font-size:10vw !important;
+  font-size: calc(10px + 2vmin);
   color: white;
-  position:relative;
-  right:140px;
-}
-}
-@media screen and (max-width: 494px )
-{
-.App-header p{
-  font-size:7vw !important;
-  position:relative;
-  right:130px;
-  color:rgb(125, 145, 53);
-}
-}
-@media screen and (max-width:494px)
-{
-#dev{
-  position:relative;
-  right:130px;
-}
-}
-@media screen and (max-width:300px)
-{
-  .App-header h1{
-    font-size:10vw !important;
-    color: white;
-    position:relative;
-    right:120px;
-  }
-
-  .App-header p{
-    font-size:7vw !important;
-    position:relative;
-    right:120px;
-    color:rgb(125, 145, 53);
-  }
-
-  #dev{
-    position:relative;
-    right:120px;
-  }
-
+  margin-top: 10px;
+  margin-left: 80px;
+  padding:20px;
+  border-radius: 10px;
+  width:max-content;
 }
 
 @keyframes App-logo-spin{
@@ -108,129 +40,20 @@
   }
 }
 
-@media screen and (min-width:600px) 
-{
   .App-summary{
     color:black;
-    display:flex;
-    position:relative;
-    bottom:50px !important;
-    left:0 !important;
-    white-space: nowrap;
-  }  
-  .facts{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:8vw !important;
+    margin: 50px 200px;
+    text-align: justify;
+    height:25vmin;
   }
-}
-@media screen and (min-width:495px) 
-{
-  #resume{
-    display:none;
-  }
-  .App-summary{
-    color:black;
-    display:flex;
-    position:relative;
-    bottom:50px !important;
-    right:140px !important;
-    white-space: nowrap;
-  }  
-  .facts{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size:5vw !important;
-  }
-}
-@media screen and (max-width:494px)
-{
-  #resume{
+  .email{
+    position: absolute;
+    bottom: 263px;
+    right: 40px;
+    color:white;
+    font-size: 14px;
     text-decoration: none;
-    text-align: center;
   }
-  .App-summary{
-    color:black;
-    margin: 1px 100px;
-    position:relative;
-    right:30px;
-  }
-  .facts{
-    padding-top:80px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    white-space:nowrap;
-    font-size:4vw !important;
-    position:relative;
-    right:80px;
-  }
-}
-
-  @keyframes develop{
-    0%{
-      background-color: rgb(125, 145, 53);
-      position:relative;
-      bottom:1px;
-    }
-    25%{
-      background-color: rgb(125, 145, 53);
-      position:relative;
-      bottom:200px;
-      left:1px;
-
-    }
-
-    50%{
-      background-color: rgb(125, 145, 53);
-      position:relative;
-      left:100px;
-      bottom:1px;
-    }
-    75%{
-      background-color: rgb(125, 145, 53);
-      position:relative;
-      left:1px;
-    }
-    100%{
-      background-color: rgb(125, 145, 53);
-      position:relative;
-      left:1px;
-    }
-  }
-  .circle{
-    width:9px;
-    height:9px;
-    display:inline-block;
-    border-radius: 50%;
-    background-color: #fff;
-    animation-name: develop;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-delay:-6;
-    animation-direction: reverse;
-  }
-
-  @media screen and (min-width:495px)
-  {
-    .App-summary{
-      color:black;
-      margin: 50px 200px;
-      text-align: justify;
-      position:relative;
-      right:30px;
-    }
-    .facts{
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size:20px !important;
-      position:relative;
-      left:20px;
-    }
-    .fa.git{
-      position:relative;
-      top:50px;
-      right:35px;
-    }
-    .fa.youtube{
-      position:relative;
-      top:100px;
-      right:72px;
-    }
+  .email:hover{
+    color:rgb(203, 228, 63);
   }
