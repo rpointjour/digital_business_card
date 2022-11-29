@@ -4,7 +4,6 @@ import ReactTooltip from "react-tooltip";
 /*AboutMe Component
 - Styled CSS according to different screen sizes
 - Used media queries to align text more appropriately
-- Assigned Ids to different parts of the section
 - Utilized ReactTooltip to display a tooltip over my image
 - Included bootstrap class list-group for technologies section
 */
@@ -30,18 +29,18 @@ function AboutMe(){
                 >Roody Pointjour</h4><br />
                 <article className='container-sm'>
                     <p className='card-text text-light'>
-                    <span className="hello">Hello! My name is Roody and I have a</span> passion
-                    for developing cool and exciting <span id="proj" style={{position:"relative", left:"12px"}}>projects.</span> <br /><br /><br />My interest
+                    <span className="hello">Hello! My name is Roody and I have a passion
+                    for developing cool projects. My interest
                     in software development started back in 2019 when I took my first course
-                    in Object-Oriented programming <span id='java' style={{position:"relative", left:"8px"}}>where I learned the Java Programming</span><br /><span id='lang' style={{position:"relative", left:"12px"}}>language.</span><br /><br />
+                    in Object-Oriented programming where I learned the Java Programming language.</span><br />
                     </p>
-                    <p className='card-text text-light'>
+                    <p className='card-text text-light hello'>
                         <br />
-                        <span id='as' style={{position:"relative", right:"8px"}}>As of now, I have the experience of</span> working as a Front-end developer intern 
-                    for an iOS and Android based application.<br /><br/><br /> My primary focus these days revolves <span id='around' style={{position:"relative", right:"8px"}}>around developing innovative software </span><span id='soft' style={{position:"relative", left:"10px"}}>applications for cloud deployment</span><br /><b className="cloud text-warning">(Cloud-based apps!)</b>
+                    As of now, I have the experience of working as a Front-End developer intern 
+                    for an iOS and Android based application. My primary focus these days revolves around developing innovative software applications for cloud deployment<span className="period">.</span> <b className="text-warning cloud">(Cloud-based apps!)</b>
                     </p>
-                    <p className='card-text text-light'>
-                    <br />Recently I have been working with these <span className="tech">technologies:</span>
+                    <p className='card-text text-light hello'>
+                    <br />Recently I have been working with these technologies:
                     </p>
                     <ul className=' list-group list-group-flush' id="lst">
                     <li className='list-group-item list-group-item-success'></li>
