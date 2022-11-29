@@ -10,7 +10,7 @@
 #lst {
   list-style-type: none;
 }
-
+/*Desktop*/
 @media screen and (min-width:495px)
 {
   #crd{
@@ -31,7 +31,28 @@
     display:none;
   }
 }
-
+/*Tablet*/
+@media screen and (min-width:495px) and ( max-width:950px)
+{
+  #crd{
+    width:500px;
+  }
+  article{
+    white-space: wrap;
+    font-size:2vw;
+    text-align:left;
+    padding-bottom:25px;
+    margin:0;
+  }
+  .hello{
+    position:relative;
+    left:6px !important;
+  }
+  .period{
+    display:none;
+  }
+}
+/*Mobile*/
 @media screen and (max-width:494px)
 {
   article{
