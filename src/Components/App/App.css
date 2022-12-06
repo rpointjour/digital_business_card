@@ -1,10 +1,3 @@
-.App-logo {
-  height: 15vmin;
-  pointer-events: none;
-  position:fixed;
-  mix-blend-mode:difference;
-  z-index: 300;
-}
 *{
   box-sizing: border-box;
 }
@@ -28,7 +21,14 @@
 }
 @media screen and (min-width:495px)
 {
-.App-header p{
+  .App-logo {
+    height: 15vmin;
+    pointer-events: none;
+    position:fixed;
+    mix-blend-mode:difference;
+    z-index: 300;
+  }
+  .App-header p{
   font-size:28px !important;
   color:rgb(125, 145, 53);
   position:relative;
@@ -53,7 +53,12 @@
 }
 @media screen and (max-width:494px)
 {
-.App-header h1{
+  .App-logo {
+    height: 15vmin;
+    pointer-events: none;
+    z-index: 300;
+  }
+  .App-header h1{
   font-size:10vw !important;
   color: white;
   position:relative;
@@ -146,12 +151,16 @@
   #resume{
     text-decoration: none;
     text-align: center;
+    position:relative;
+    top: 230px;
+    right:75px;
   }
   .App-summary{
     color:black;
     margin: 1px 100px;
     position:relative;
     right:30px;
+    bottom:100px;
   }
   .facts{
     padding-top:80px;
