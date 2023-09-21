@@ -15,7 +15,7 @@ function Projects(){
                 <br />
                 <section className="featured text-light"><hr />
                 <h3>Turtlebot3 Waffle Pi</h3><br />
-                <button type="button"><a href="/Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
+                <button type="button"><a href="Resume/RJP%20Portfolio%20-%20CE_DBC.pdf" target="blank" rel="noreferrer">Description</a></button>
                 <br /><br />
                 </section><br />
                 <div className="stock text-light"><hr />
