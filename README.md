@@ -1,7 +1,7 @@
 # My Digital Business Card (https://rpointjour.github.io/digital_business_card)
 This app was created using the React JavaScript library & Create React App!
 
-Hosted through AWS Amplify.
+Hosted through GitHub Pages.
 
 ![rpointjour_home](https://user-images.githubusercontent.com/54840122/204167079-b18157b8-d553-4a27-a412-1e74e173914c.JPG)
 
