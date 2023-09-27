@@ -46,9 +46,9 @@ function AboutMe(){
                     <li className='list-group-item list-group-item-success'></li>
                     <li className='list-group-item list-group-item-action list-group-item-warning'>JavaScript</li>
                     <li className='list-group-item active'>React</li>
-                    <li className='list-group-item list-group-item-action list-group-item-danger'>Node.js</li>
-                    <li className='list-group-item list-group-item-action list-group-item-dark'>C++</li>
-                    <li className='list-group-item list-group-item-action list-group-item-success'>C#</li>
+                    <li className='list-group-item list-group-item-action list-group-item-danger'>PyTorch</li>
+                    <li className='list-group-item list-group-item-action list-group-item-dark'>WordPress</li>
+                    <li className='list-group-item list-group-item-action list-group-item-success'>TensorFlow</li>
                     <li className='list-group-item list-group-item-action list-group-item-info'>Python</li>
                     </ul>
                     </article>
