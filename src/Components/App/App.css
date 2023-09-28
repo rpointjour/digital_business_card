@@ -24,7 +24,6 @@
   .App-logo {
     height: 15vmin;
     pointer-events: none;
-    position:fixed;
     mix-blend-mode:difference;
     z-index: 300;
   }
@@ -169,7 +168,7 @@
     white-space:nowrap;
     font-size:4vw !important;
     position:relative;
-    right:80px;
+    right:60px;
   }
 }
 

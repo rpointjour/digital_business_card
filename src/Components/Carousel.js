@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import turtlebot3 from "./StyleSheets/Images/turtlebot3_waffle_pi.jpg";
-import stockHome from "./StyleSheets/Images/stock_home.JPG";
+import voxl from "./StyleSheets/Images/Voxl.png";
 import dReader from "./StyleSheets/Images/distance_reader.JPG";
 /*Carousel Component
 - Used react-slick Slider for App Carousel
@@ -31,7 +31,27 @@ export default function Carousel() {
     }}
     >
       <div>
-        <img src={turtlebot3} alt="Turtlebot3" 
+        <img src={voxl} alt="Voxl" 
+        style={
+        {
+            width:275, 
+            height:400, 
+            display:"block",
+            marginLeft:"auto",
+            marginRight:"auto",
+            borderRadius:"5px"
+        }} 
+        />
+        <h3
+        style={
+          {
+            fontFamily:"Inter",
+            color:"black"
+        }}
+        ><b className="text-light">Long Range Encryption</b></h3>
+      </div>
+      <div>
+      <img src={turtlebot3} alt="Turtlebot3" 
         style={
         {
             width:275, 
@@ -49,26 +69,6 @@ export default function Carousel() {
             color:"black"
         }}
         ><b className="text-light">Turtlebot3 Waffle Pi</b></h3>
-      </div>
-      <div>
-      <img src={stockHome} alt="Stock App" 
-        style={
-        {
-            width:275, 
-            height:400, 
-            display:"block",
-            marginLeft:"auto",
-            marginRight:"auto",
-            borderRadius:"5px"
-        }} 
-        />
-        <h3
-        style={
-          {
-            fontFamily:"Inter",
-            color:"black"
-        }}
-        ><b className="text-light">My Stock App</b></h3>
       </div>
       <div>
       <img src={dReader} alt="Distance Reader" 
