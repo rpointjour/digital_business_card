@@ -42,7 +42,6 @@ function Menu(){
             to="connect" 
             href="#connect"
             >Connect</Link></li>
-            <li className="item"><a href="Resume/Roody-Pointjour-Resume.pdf" target="_blank" rel="noreferrer">Resume</a></li>
             </ul>
         </nav>
         </>
