@@ -46,10 +46,10 @@ function AboutMe(){
                     <li className='list-group-item list-group-item-success'></li>
                     <li className='list-group-item list-group-item-action list-group-item-warning'>JavaScript</li>
                     <li className='list-group-item active'>React</li>
-                    <li className='list-group-item list-group-item-action list-group-item-danger'>PyTorch</li>
-                    <li className='list-group-item list-group-item-action list-group-item-dark'><a href="https://rpointjour.wordpress.com/" target="blank" rel="noreferrer">WordPress</a></li>
-                    <li className='list-group-item list-group-item-action list-group-item-success'>TensorFlow</li>
-                    <li className='list-group-item list-group-item-action list-group-item-info'>Python</li>
+                    <li className='list-group-item list-group-item-action list-group-item-danger'>C++</li>
+                    <li className='list-group-item list-group-item-action list-group-item-dark'>Java</li>
+                    <li className='list-group-item list-group-item-action list-group-item-success'>Raspberry Pi</li>
+                    <li className='list-group-item list-group-item-action list-group-item-info'><a href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
                     </ul>
                     </article>
             </div>

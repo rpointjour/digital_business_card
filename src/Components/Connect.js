@@ -8,6 +8,7 @@ function Connect(){
     return(
         <>
         <footer className="connect container-fluid">
+        <a href="https://rpointjour.wordpress.com/" target="blank" rel="noreferrer" class="text-dark">Blog</a><hr />
             <h3>03. Don't Be Afraid To Reach Out! 
             <div class="toast bg-dark text-light show mytoast">
   <div class="toast-header bg-secondary text-light">
