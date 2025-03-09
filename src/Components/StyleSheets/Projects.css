@@ -4,7 +4,7 @@
   padding-top:250px;
 }
 #projects{
-  background-color: #187794;
+  background-color: #07232c;
 }
 
 @media screen and (min-width:495px)
@@ -34,7 +34,7 @@
 
 .featured{
     font-family: 'Inter', sans-serif;
-    color:black;
+    color:rgb(114, 27, 27);
     position:relative;
     top:120px;
 }
@@ -56,7 +56,7 @@
   background-color: #af4c4c;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 5px rgb(66, 63, 63);
+  box-shadow: 0 5px #af4c4c;
 }
 
 .featured button:hover{

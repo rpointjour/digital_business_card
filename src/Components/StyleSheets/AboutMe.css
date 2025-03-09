@@ -10,6 +10,18 @@
 #lst {
   list-style-type: none;
 }
+
+#pi {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#python{
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+}
 /*Desktop*/
 @media screen and (min-width:495px)
 {

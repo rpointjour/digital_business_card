@@ -9,7 +9,7 @@ function Projects(){
     return(
         <div className='container-fluid' id="crd_projects">
         <div class="card container-sm" id="projects">
-            <h1 className='card-header container-sm bg-dark text-light'>02. Featured Projects</h1>
+            <h1 className='card-header container-sm bg-secondary text-light'>02. Featured Projects</h1>
             <div class="card-body container-sm">
                 <Carousel />
                 <br />

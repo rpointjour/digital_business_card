@@ -36,8 +36,8 @@ function AboutMe(){
                     </p>
                     <p className='card-text text-light hello'>
                         <br />
-                    As of now, I have the experience of working as a Front-End developer intern 
-                    for an iOS and Android based application. My primary focus these days revolves around developing innovative software applications for cloud deployment<span className="period">.</span> <b className="text-warning cloud">(Cloud-based apps!)</b>
+                    I have the experience of working as an Embedded Software Engineer 
+                    for drones and RFID communication systems. My primary focus these days revolves around developing innovative software and hardware applications for machine learning.<span className="period">.</span> <b className="text-warning cloud">(AI-based apps!)</b>
                     </p>
                     <p className='card-text text-light hello'>
                     <br />Recently I have been working with these technologies:
@@ -48,8 +48,8 @@ function AboutMe(){
                     <li className='list-group-item active'>React</li>
                     <li className='list-group-item list-group-item-action list-group-item-danger'>C++</li>
                     <li className='list-group-item list-group-item-action list-group-item-dark'>Java</li>
-                    <li className='list-group-item list-group-item-action list-group-item-success'>Raspberry Pi</li>
-                    <li className='list-group-item list-group-item-action list-group-item-info'><a href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
+                    <li className='list-group-item list-group-item-action list-group-item-success'><a id="pi" href="https://pi-3-dashboard.web.app/" target="blank" rel="noreferrer">Raspberry Pi</a></li>
+                    <li className='list-group-item list-group-item-action list-group-item-info'><a id="python" href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
                     </ul>
                     </article>
             </div>
