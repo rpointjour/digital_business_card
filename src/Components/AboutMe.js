@@ -36,8 +36,8 @@ function AboutMe(){
                     </p>
                     <p className='card-text text-light hello'>
                         <br />
-                    I have the experience of working as an Embedded Software Engineer 
-                    for drones and RFID communication systems. My primary focus these days revolves around developing innovative software and hardware applications for machine learning.<span className="period">.</span> <b className="text-warning cloud">(AI-based apps!)</b>
+                    I have several years of experience working as an Embedded Software Engineer 
+                    for drone and RFID communication systems. My primary focus these days revolves around developing innovative software and hardware applications for machine learning.<span className="period">.</span> <b className="text-warning cloud">(AI-based apps!)</b>
                     </p>
                     <p className='card-text text-light hello'>
                     <br />Recently I have been working with these technologies:
