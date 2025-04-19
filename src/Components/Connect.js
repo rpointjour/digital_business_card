@@ -20,7 +20,7 @@ function Connect(){
   </div>
 </div>
                 </h3><br />
-            <h2><button type="button" className="contact"> <a href="mailto:roody.jerry@yahoo.com" rel="noreferrer">
+            <h2><button type="button" className="contact"> <a href="mailto:rpointjour@yahoo.com" rel="noreferrer">
                 Let's Connect
                 </a></button></h2><br />
             <p className="credits">Built & Designed by Roody Pointjour</p>
