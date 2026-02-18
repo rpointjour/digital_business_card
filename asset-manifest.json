@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/digital_business_card/static/css/main.feb96756.css",
-    "main.js": "/digital_business_card/static/js/main.d8b06382.js",
-    "static/js/787.86b5e812.chunk.js": "/digital_business_card/static/js/787.86b5e812.chunk.js",
+    "main.css": "/digital_business_card/static/css/main.ca5297bd.css",
+    "main.js": "/digital_business_card/static/js/main.56a2651c.js",
+    "static/js/453.e3d24810.chunk.js": "/digital_business_card/static/js/453.e3d24810.chunk.js",
     "static/media/Roody Pointjour Oct 2022-8.jpg": "/digital_business_card/static/media/Roody Pointjour Oct 2022-8.646ecbb162db5974df72.jpg",
     "static/media/Voxl.png": "/digital_business_card/static/media/Voxl.4e5d7b241f4dcae321e1.png",
     "static/media/turtlebot3_waffle_pi.jpg": "/digital_business_card/static/media/turtlebot3_waffle_pi.95183c9fecdd3046077e.jpg",
     "static/media/distance_reader.JPG": "/digital_business_card/static/media/distance_reader.dc92fd9054619a9318f0.JPG",
     "static/media/logo_dbc.svg": "/digital_business_card/static/media/logo_dbc.a023ced6a8d434f4ee4577215f8cace3.svg",
     "index.html": "/digital_business_card/index.html",
-    "main.feb96756.css.map": "/digital_business_card/static/css/main.feb96756.css.map",
-    "main.d8b06382.js.map": "/digital_business_card/static/js/main.d8b06382.js.map",
-    "787.86b5e812.chunk.js.map": "/digital_business_card/static/js/787.86b5e812.chunk.js.map"
+    "main.ca5297bd.css.map": "/digital_business_card/static/css/main.ca5297bd.css.map",
+    "main.56a2651c.js.map": "/digital_business_card/static/js/main.56a2651c.js.map",
+    "453.e3d24810.chunk.js.map": "/digital_business_card/static/js/453.e3d24810.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.feb96756.css",
-    "static/js/main.d8b06382.js"
+    "static/css/main.ca5297bd.css",
+    "static/js/main.56a2651c.js"
   ]
 }
