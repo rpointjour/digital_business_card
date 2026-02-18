@@ -43,13 +43,12 @@ function AboutMe(){
                     <br />Recently I have been working with these technologies:
                     </p>
                     <ul className=' list-group list-group-flush' id="lst">
-                    <li className='list-group-item list-group-item-success'></li>
-                    <li className='list-group-item list-group-item-action list-group-item-warning'>JavaScript</li>
-                    <li className='list-group-item active'>React</li>
-                    <li className='list-group-item list-group-item-action list-group-item-danger'>C++</li>
-                    <li className='list-group-item list-group-item-action list-group-item-dark'>Java</li>
+                    <li className='list-group-item list-group-item-dark'></li>
+                    <li className='list-group-item list-group-item-action list-group-item-warning'><b>Near Field Communication (NFC)</b></li>
+                    <li className='list-group-item list-group-item-action list-group-item-danger'><b>ESP32</b></li>
+                    <li className='list-group-item active list-group-item-action list-group-item-primary'><b>Bluetooth Low Energy (BLE)</b></li>
                     <li className='list-group-item list-group-item-action list-group-item-success'><a id="pi" href="https://pi-3-dashboard.web.app/" target="blank" rel="noreferrer">Raspberry Pi</a></li>
-                    <li className='list-group-item list-group-item-action list-group-item-info'><a id="python" href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
+                    <li className='list-group-item list-group-item-action list-group-item-light'><a id="python" href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
                     </ul>
                     </article>
             </div>
