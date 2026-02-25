@@ -14,10 +14,10 @@ function Projects(){
                 <Carousel />
                 <br />
                 <section className="featured text-light"><hr />
-                <h3>Turtlebot3 Waffle Pi</h3><br />
-                <button type="button"><a href="Resume/RJP%20Portfolio%20-%20CE.pdf" target="blank" rel="noreferrer">Description</a></button>
-                <br /><br />
-                </section><br />
+                <h3>Portfolio</h3><br />
+                <button type="button"><a href="Resume/RJP%20Portfolio%20-%20CE.pdf" target="blank" rel="noreferrer">Overview</a></button>
+                <br />
+                </section>
                 <div className="stock text-light"><hr />
                 <div>
                 <h3>Stock App (Android Studio)</h3><br />
