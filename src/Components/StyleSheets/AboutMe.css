@@ -28,6 +28,12 @@
   color: crimson;
   font-weight: bold;
 }
+
+#stm32{
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+}
 /*Desktop*/
 @media screen and (min-width:495px)
 {
