@@ -47,7 +47,7 @@ function AboutMe(){
                     <li className='list-group-item list-group-item-action list-group-item-light'><a id="python" href="https://rjpking92.pythonanywhere.com/" target="blank" rel="noreferrer">Python</a></li>
                     <li className='list-group-item list-group-item-action list-group-item-success'><a id="pi" href="https://rjpdev-pi-launchpad.web.app" target="blank" rel="noreferrer">Raspberry Pi</a></li>
                     <li className='list-group-item active list-group-item-action list-group-item-primary'><b>Bluetooth Low Energy (BLE)</b></li>
-                    <li className='list-group-item list-group-item-action list-group-item-danger'><b>ESP32</b></li>
+                    <li className='list-group-item list-group-item-action list-group-item-danger'><a id="esp32" href="https://rjpdev-esp32-launchpad.web.app" target="blank" rel="noreferrer">ESP32</a></li>
                     <li className='list-group-item list-group-item-action list-group-item-warning'><b>STM32</b></li>
                     </ul>
                     </article>

@@ -22,6 +22,12 @@
   color: blueviolet;
   font-weight: bold;
 }
+
+#esp32{
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+}
 /*Desktop*/
 @media screen and (min-width:495px)
 {
