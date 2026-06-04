@@ -15,7 +15,7 @@ function Projects(){
                 <br />
                 <section className="featured text-light"><hr />
                 <h3>Portfolio</h3><br />
-                <button type="button"><a href="Resume/RJP%20Portfolio%20-%20CE.pdf" target="blank" rel="noreferrer">Overview</a></button>
+                <a href={`${process.env.PUBLIC_URL}/Resume/RJP%20Portfolio%20-%20CE.pdf`} target="_blank" rel="noreferrer" className="portfolio-btn">Overview</a>
                 <br />
                 </section>
                 <div className="stock text-light"><hr />
