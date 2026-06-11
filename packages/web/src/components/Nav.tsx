@@ -27,18 +27,8 @@ export default function Nav() {
         scrolled ? 'glass border-b border-white/5 shadow-lg' : ''
       }`}
     >
-      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Wordmark */}
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="font-mono font-bold text-sm tracking-widest transition-opacity opacity-90 hover:opacity-100"
-          style={{ color: 'var(--color-accent)' }}
-          aria-label="Back to top"
-        >
-          rjp<span style={{ color: 'var(--color-muted)' }}>_</span>dev
-        </button>
-
-        {/* Desktop links */}
+      <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-end">
+        {/* Desktop links + wordmark */}
         <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
@@ -53,6 +43,16 @@ export default function Nav() {
               </button>
             </li>
           ))}
+          <li>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="font-mono font-bold text-sm tracking-widest transition-opacity opacity-90 hover:opacity-100"
+              style={{ color: 'var(--color-accent)' }}
+              aria-label="Back to top"
+            >
+              rjp<span style={{ color: 'var(--color-muted)' }}>_</span>dev
+            </button>
+          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -89,6 +89,15 @@ export default function Nav() {
                   </button>
                 </li>
               ))}
+              <li>
+                <button
+                  onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); setMenuOpen(false) }}
+                  className="font-mono font-bold text-sm tracking-widest"
+                  style={{ color: 'var(--color-accent)' }}
+                >
+                  rjp<span style={{ color: 'var(--color-muted)' }}>_</span>dev
+                </button>
+              </li>
             </ul>
           </motion.div>
         )}
