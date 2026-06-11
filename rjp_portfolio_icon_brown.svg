@@ -1,0 +1,28 @@
+<svg width="100%" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">R.J.P Portfolio App Icon - Brown case</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Career portfolio app icon with dark brown briefcase, white RJP initials and silver portfolio text on deep dark background</desc>
+
+  <rect x="90" y="90" width="500" height="500" rx="112" fill="#0d0d0a" style="fill:rgb(13, 13, 10);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="90" y="90" width="500" height="500" rx="112" fill="none" stroke="#b8860b" stroke-width="1.5" opacity="0.3" style="fill:none;stroke:rgb(184, 134, 11);color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.3;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Briefcase body — dark brown -->
+  <rect x="148" y="230" width="384" height="248" rx="26" fill="#2c1a0e" style="fill:rgb(44, 26, 14);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="148" y="230" width="384" height="248" rx="26" fill="none" stroke="#c9960c" stroke-width="3" style="fill:none;stroke:rgb(201, 150, 12);color:rgb(0, 0, 0);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Briefcase handle -->
+  <path d="M218,230 L218,185 Q218,158 340,158 Q462,158 462,185 L462,230" fill="none" stroke="#2c1a0e" stroke-width="22" stroke-linecap="round" style="fill:none;stroke:rgb(44, 26, 14);color:rgb(0, 0, 0);stroke-width:22px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M218,230 L218,185 Q218,158 340,158 Q462,158 462,185 L462,230" fill="none" stroke="#c9960c" stroke-width="3.5" stroke-linecap="round" style="fill:none;stroke:rgb(201, 150, 12);color:rgb(0, 0, 0);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Horizontal clasp line -->
+  <line x1="148" y1="338" x2="532" y2="338" stroke="#c9960c" stroke-width="2" opacity="0.4" style="fill:rgb(0, 0, 0);stroke:rgb(201, 150, 12);color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Clasp buckle -->
+  <rect x="314" y="324" width="52" height="28" rx="8" fill="#2c1a0e" stroke="#c9960c" stroke-width="2.5" style="fill:rgb(44, 26, 14);stroke:rgb(201, 150, 12);color:rgb(0, 0, 0);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="340" cy="338" r="6" fill="#c9960c" opacity="0.9" style="fill:rgb(201, 150, 12);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.9;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- RJP Initials — white -->
+  <text x="340" y="308" font-family="var(--font-sans)" font-size="82" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="8" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:82px;font-weight:500;text-anchor:middle;dominant-baseline:auto">RJP</text>
+
+  <!-- Tagline — silver -->
+  <text x="340" y="444" font-family="var(--font-sans)" font-size="19" font-weight="400" fill="#c0c0c0" text-anchor="middle" letter-spacing="6" style="fill:rgb(192, 192, 192);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, sans-serif;font-size:19px;font-weight:400;text-anchor:middle;dominant-baseline:auto">PORTFOLIO</text>
+</svg>

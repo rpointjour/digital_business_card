@@ -1,0 +1,27 @@
+<svg width="680" height="680" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>R.J.P Portfolio App Icon</title>
+
+  <rect x="90" y="90" width="500" height="500" rx="112" fill="#0d0d0a"/>
+  <rect x="90" y="90" width="500" height="500" rx="112" fill="none" stroke="#b8860b" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Briefcase body -->
+  <rect x="148" y="230" width="384" height="248" rx="26" fill="#2c1a0e"/>
+  <rect x="148" y="230" width="384" height="248" rx="26" fill="none" stroke="#c9960c" stroke-width="3"/>
+
+  <!-- Briefcase handle -->
+  <path d="M218,230 L218,185 Q218,158 340,158 Q462,158 462,185 L462,230" fill="none" stroke="#2c1a0e" stroke-width="22" stroke-linecap="round"/>
+  <path d="M218,230 L218,185 Q218,158 340,158 Q462,158 462,185 L462,230" fill="none" stroke="#c9960c" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Horizontal clasp line -->
+  <line x1="148" y1="338" x2="532" y2="338" stroke="#c9960c" stroke-width="2" opacity="0.4"/>
+
+  <!-- Clasp buckle -->
+  <rect x="314" y="324" width="52" height="28" rx="8" fill="#2c1a0e" stroke="#c9960c" stroke-width="2.5"/>
+  <circle cx="340" cy="338" r="6" fill="#c9960c" opacity="0.9"/>
+
+  <!-- RJP Initials -->
+  <text x="340" y="308" font-family="system-ui, sans-serif" font-size="82" font-weight="500" fill="#ffffff" text-anchor="middle" letter-spacing="8">RJP</text>
+
+  <!-- Tagline -->
+  <text x="340" y="444" font-family="system-ui, sans-serif" font-size="19" font-weight="400" fill="#c0c0c0" text-anchor="middle" letter-spacing="6">PORTFOLIO</text>
+</svg>
