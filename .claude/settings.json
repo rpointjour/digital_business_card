@@ -2,6 +2,9 @@
   "permissions": {
     "additionalDirectories": [
       "c:\\Users\\rpointjour\\Documents\\Notes\\Scripts\\rjpdev\\Projects\\digital_business_card\\packages"
+    ],
+    "allow": [
+      "Bash(pnpm --filter @rjp/web deploy)"
     ]
   }
 }
