@@ -162,7 +162,7 @@ export default function Projects() {
   const [selected, setSelected] = useState<Project | null>(null)
 
   return (
-    <section id="projects" className="py-16 px-6" ref={ref}>
+    <section id="projects" className="py-16 px-6 scroll-mt-20" ref={ref}>
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div

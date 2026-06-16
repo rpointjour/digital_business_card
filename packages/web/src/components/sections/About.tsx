@@ -17,7 +17,7 @@ export default function About() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="about" className="pt-8 pb-16 px-6" ref={ref}>
+    <section id="about" className="pt-8 pb-16 px-6 scroll-mt-20" ref={ref}>
       <div className="max-w-5xl mx-auto">
         {/* Section header */}
         <motion.div

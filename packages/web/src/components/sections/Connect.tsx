@@ -15,7 +15,7 @@ export default function Connect() {
   }
 
   return (
-    <section id="connect" className="py-16 px-6" ref={ref}>
+    <section id="connect" className="py-16 px-6 scroll-mt-20" ref={ref}>
       <div className="max-w-2xl mx-auto text-center flex flex-col items-center gap-8">
         {/* Header */}
         <motion.div
