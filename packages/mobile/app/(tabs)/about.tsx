@@ -23,15 +23,15 @@ export default function AboutScreen() {
           <Text style={styles.heading}>About Me</Text>
         </View>
 
+        <View style={styles.photoWrapper}>
+          <Image source={profilePhoto} style={styles.photo} resizeMode="cover" />
+        </View>
+
         {profile.bio.map((paragraph, i) => (
           <View key={i}>
             <Text style={styles.bio}>{paragraph}</Text>
           </View>
         ))}
-
-        <View style={styles.photoWrapper}>
-          <Image source={profilePhoto} style={styles.photo} resizeMode="cover" />
-        </View>
 
         <View style={styles.divider} />
 
