@@ -17,7 +17,7 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
       >
         <Image
-          source={require('../../assets/briefcase-clean.png')}
+          source={require('../../assets/rjp_port.png')}
           style={styles.icon}
           resizeMode="contain"
         />
