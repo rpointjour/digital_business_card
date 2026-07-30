@@ -4,6 +4,6 @@
   "scripts": {
     "start": "pnpm --filter @rjp/web start",
     "build": "pnpm --filter @rjp/web build",
-    "deploy": "pnpm --filter @rjp/web deploy"
+    "deploy": "pnpm --filter @rjp/web run deploy"
   }
 }
