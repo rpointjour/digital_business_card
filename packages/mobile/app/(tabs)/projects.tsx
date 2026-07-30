@@ -11,9 +11,9 @@ const CARD_BG = 'rgba(255,255,255,0.05)'
 const BORDER = 'rgba(255,255,255,0.08)'
 
 const THUMBNAILS: Record<string, ReturnType<typeof require>> = {
-  'stock_home.jpg':      require('../../assets/stock_home.jpg'),
+  'alexa_relay.jpg':     require('../../assets/alexa_relay.jpg'),
   'distance_reader.jpg': require('../../assets/distance_reader.jpg'),
-  'voxl.png':            require('../../assets/voxl.png'),
+  'ble_relay.jpg':       require('../../assets/ble_relay.jpg'),
   'turtlebot3.jpg':      require('../../assets/turtlebot3.jpg'),
 }
 

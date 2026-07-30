@@ -3,6 +3,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import * as Clipboard from 'expo-clipboard'
 import * as WebBrowser from 'expo-web-browser'
 import { Ionicons } from '@expo/vector-icons'
+import Constants from 'expo-constants'
 import { useState } from 'react'
 import { profile, socialLinks } from '@rjp/shared'
 import type { SocialLink } from '@rjp/shared'
@@ -97,6 +98,7 @@ export default function ContactScreen() {
 
         <View>
           <Text style={styles.footer}>Built & designed by {profile.name}</Text>
+          <Text style={styles.version}>v{Constants.expoConfig?.version}</Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -150,4 +152,5 @@ const styles = StyleSheet.create({
   socialIcon: { width: 32, alignItems: 'center', marginRight: 12 },
   socialName: { flex: 1, fontSize: 15, color: '#ffffff', fontWeight: '500' },
   footer: { fontSize: 12, color: MUTED, textAlign: 'center', marginTop: 8 },
+  version: { fontSize: 11, color: MUTED, textAlign: 'center', marginTop: 4 },
 })

@@ -12,6 +12,6 @@ export const skills: Skill[] = [
   { name: 'STM32',            url: 'https://rjpdev-stm32-launchpad.web.app',      color: '#ffffff' },
   { name: 'Python',           url: null },
   { name: 'C / C++',          url: null },
-  { name: 'React',            url: null },
+  { name: 'IoT',              url: null },
   { name: 'ROS',              url: null },
 ]

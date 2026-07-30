@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
   scroll: { flex: 1 },
   content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40 },
-  icon: { width: 110, height: 110, marginBottom: 24 },
+  icon: { width: 110, height: 88, marginBottom: 24 },
   greeting: {
     fontSize: 13,
     color: ACCENT,

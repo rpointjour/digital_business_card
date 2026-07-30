@@ -4,15 +4,15 @@ import { projects, profile } from '@rjp/shared'
 import type { Project } from '@rjp/shared'
 
 // Vite asset imports for thumbnails
-import stockImg       from '../../assets/stock_home.jpg'
+import alexaImg       from '../../assets/alexa_relay.jpg'
 import distanceImg    from '../../assets/distance_reader.jpg'
-import voxlImg        from '../../assets/voxl.png'
+import bleRelayImg    from '../../assets/ble_relay.jpg'
 import turtlebotImg   from '../../assets/turtlebot3.jpg'
 
 const thumbnails: Record<string, string> = {
-  'stock_home.jpg':       stockImg,
+  'alexa_relay.jpg':      alexaImg,
   'distance_reader.jpg':  distanceImg,
-  'voxl.png':             voxlImg,
+  'ble_relay.jpg':        bleRelayImg,
   'turtlebot3.jpg':       turtlebotImg,
 }
 
