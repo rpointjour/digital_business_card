@@ -1,7 +1,6 @@
 # RJP Portfolio
 
-<img src="https://github.com/user-attachments/assets/6c4eab96-8efb-42c8-bcc8-fa5dd59d2663" alt="RJP Port logo" 
-  style="width:25%;height:25%"  />
+<img src="packages/mobile/assets/rjp_port.png" alt="RJP Port logo" style="width:25%;height:25%" />
 
 
 A full-stack personal portfolio — web app + native iOS/Android mobile app — built as a pnpm monorepo.
@@ -40,11 +39,9 @@ A full-stack personal portfolio — web app + native iOS/Android mobile app — 
 
 ### Screenshots
 
-> Add screenshots here after taking them from the device. Suggested path: `docs/screenshots/`
-
 | Home | About Me | Projects | Connect |
 |------|----------|----------|---------|
-| *(screenshot)* | *(screenshot)* | *(screenshot)* | *(screenshot)* |
+| ![Home](docs/screenshots/home_screen.png) | ![About Me](docs/screenshots/about_me_screen.png) | ![Projects](docs/screenshots/projects_screen.png) | ![Connect](docs/screenshots/connect_screen.png) |
 
 ### Download
 - **iOS** — [App Store](https://apps.apple.com) *(add link once public)*
@@ -58,7 +55,9 @@ Built with React + Vite + Tailwind CSS 4. Framer Motion for animations. Deployed
 
 ### Screenshots
 
-> Add web screenshots here.
+| Home | About Me | Projects | Connect |
+|------|----------|----------|---------|
+| ![Home](docs/screenshots/home_screen.png) | ![About Me](docs/screenshots/about_me_screen.png) | ![Projects](docs/screenshots/projects_screen.png) | ![Connect](docs/screenshots/connect_screen.png) |
 
 ---
 
