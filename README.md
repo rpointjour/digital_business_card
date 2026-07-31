@@ -1,5 +1,9 @@
 # RJP Portfolio
 
+<img src="https://github.com/user-attachments/assets/6c4eab96-8efb-42c8-bcc8-fa5dd59d2663" alt="RJP Port logo" 
+  style="width:25%;height:25%"  />
+
+
 A full-stack personal portfolio — web app + native iOS/Android mobile app — built as a pnpm monorepo.
 
 **Live site:** https://rpointjour.github.io/digital_business_card
