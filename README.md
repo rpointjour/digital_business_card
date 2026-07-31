@@ -1,103 +1,145 @@
-# My Digital Business Card (https://rpointjour.github.io/digital_business_card)
-This app was created using React JavaScript library & Create React App!
+# RJP Portfolio
 
-Hosted through GitHub Pages.
+A full-stack personal portfolio — web app + native iOS/Android mobile app — built as a pnpm monorepo.
 
-![rpointjour_home](https://user-images.githubusercontent.com/54840122/204167079-b18157b8-d553-4a27-a412-1e74e173914c.JPG)
+**Live site:** https://rpointjour.github.io/digital_business_card
 
-## Design Process: Final Design
-Initial Design, Prototype, Final Design
+---
 
-Which are also included in their respective branches.
+## What's Inside
 
-## App Process + Version Control Integration
-1. Created directory for digital business card
-2. Installed Create React App
+| Package | Stack | Description |
+|---|---|---|
+| `packages/web` | React 18, Vite, Tailwind CSS 4, Framer Motion | Portfolio web app, deployed to GitHub Pages |
+| `packages/mobile` | Expo SDK 54, React Native 0.81, expo-router | iOS + Android native app |
+| `packages/shared` | TypeScript | Shared profile data, projects, skills |
+
+---
+
+## Mobile App
+
+### Screens
+
+**Home** — Name, roles, bio summary, stats
+
+**About Me** — Profile photo, full bio, color-coded tech stack chips with in-app browser links
+
+**Projects** — Project cards with thumbnails; video projects open YouTube in-app, others link to the full portfolio PDF
+
+**Connect** — Social links (LinkedIn, GitHub, YouTube, Blog) with colored icons, opens in-app browser
+
+### Tech
+- Expo SDK 54 · expo-router 6 · React Native 0.81
+- `expo-web-browser` for in-app browser links
+- `react-native-safe-area-context` for dynamic tab bar height (Android nav bar)
+- EAS Build + EAS Submit for store distribution
+
+### Screenshots
+
+> Add screenshots here after taking them from the device. Suggested path: `docs/screenshots/`
+
+| Home | About Me | Projects | Connect |
+|------|----------|----------|---------|
+| *(screenshot)* | *(screenshot)* | *(screenshot)* | *(screenshot)* |
+
+### Download
+- **iOS** — [App Store](https://apps.apple.com) *(add link once public)*
+- **Android** — [Google Play](https://play.google.com) *(add link once public)*
+
+---
+
+## Web App
+
+Built with React + Vite + Tailwind CSS 4. Framer Motion for animations. Deployed via GitHub Pages.
+
+### Screenshots
+
+> Add web screenshots here.
+
+---
+
+## Project Structure
 
 ```
-npx create-react-app my-react-app
+digital_business_card/
+├── packages/
+│   ├── web/          # React + Vite web portfolio
+│   ├── mobile/       # Expo React Native app
+│   └── shared/       # Shared TS data (profile, projects, skills)
+├── package.json      # pnpm workspace root
+└── pnpm-workspace.yaml
 ```
 
-3. Changed directory to my-react-app
+---
 
+## Local Development
+
+### Prerequisites
+- Node.js 18+
+- pnpm
+- Expo Go app on your device (for mobile dev)
+
+### Web
+
+```bash
+pnpm install
+pnpm start          # starts Vite dev server
 ```
-cd my-react-app
+
+### Mobile
+
+```bash
+cd packages/mobile
+pnpm start          # starts Expo dev server
+# then scan QR code with Expo Go
 ```
 
-4. Started development environment
+To run on a specific platform:
 
+```bash
+pnpm ios      # iOS
+pnpm android  # Android
 ```
-npm start
+
+### Deploy Web
+
+```bash
+pnpm deploy   # builds and pushes to GitHub Pages
 ```
 
-5. Initialized Git Repository
-6. Added repository to Github
-7. Updated code and made changes
-## App Components
-App.js
+---
 
-App.css
+## Mobile Build & Release (EAS)
 
-App.test.js
-## StyleSheets
-AboutMe.css
+```bash
+cd packages/mobile
 
-Connect.css
+# Production build (both platforms)
+eas build --platform all --profile production
 
-Loader.css
+# Submit to stores
+eas submit --platform all --profile production
+```
 
-Menu.css
+App config: [`packages/mobile/app.json`](packages/mobile/app.json)
+EAS config: [`packages/mobile/eas.json`](packages/mobile/eas.json)
 
-Projects.css
+- **iOS bundle ID:** `com.rjpdev.portfolio`
+- **Android package:** `com.rjpdev.portfolio`
+- **EAS project:** `22eb7709-1e2b-4312-a32c-7e12f53e7d00`
 
-SocialMedia.css
+---
 
-## Other Components
-AboutMe.js
+## Shared Data
 
-Carousel.js
+All profile content lives in `packages/shared/src/` and is consumed by both web and mobile:
 
-Connect.js
+- `profile.ts` — name, bio, summary, stats, links
+- `projects.ts` — project list with thumbnails and video URLs
+- `skills.ts` — tech stack with optional color coding
 
-Home.js
+---
 
-Logo.js
+## License
 
-Loader.js
-
-Menu.js
-
-Projects.js
-
-SocialMedia.js
-
-Summary.js
-
-## Additional Dependencies
-react-scroll
-
-react-slick
-
-react-tooltip
-
-## Digital Business Card Preview
-
-**Home**
-
-![rpointjour_home](https://user-images.githubusercontent.com/54840122/204167831-9de775f7-b2f8-40bd-a567-b5e1c18ea61e.JPG)
-
-**About Me**
-
-![rpointjour_aboutme](https://user-images.githubusercontent.com/54840122/204167957-3f4de9e2-5065-45c5-bf57-c3f55189d4a0.JPG)
-
-**Projects**
-
-![rpointjour_projects](https://user-images.githubusercontent.com/54840122/204168166-0f381a2c-ce76-41fb-b370-f2c1a50501ee.JPG)
-
-
-
-
-
-
-
-
+Personal portfolio — all rights reserved.
