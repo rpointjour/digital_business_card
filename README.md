@@ -41,7 +41,7 @@ A full-stack personal portfolio — web app + native iOS/Android mobile app — 
 
 | Home | About Me | Projects | Connect |
 |------|----------|----------|---------|
-| ![Home](docs/screenshots/home_screen.png) | ![About Me](docs/screenshots/about_me_screen.png) | ![Projects](docs/screenshots/projects_screen.png) | ![Connect](docs/screenshots/connect_screen.png) |
+| ![Home](docs/screenshots/mobile_home_screen.png) | ![About Me](docs/screenshots/mobile_about_me_screen.png) | ![Projects](docs/screenshots/mobile_projects_screen.png) | ![Connect](docs/screenshots/mobile_connect_screen.png) |
 
 ### Download
 - **iOS** — [App Store](https://apps.apple.com) *(add link once public)*
