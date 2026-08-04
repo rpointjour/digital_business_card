@@ -44,7 +44,7 @@ A full-stack personal portfolio — web app + native iOS/Android mobile app — 
 | ![Home](docs/screenshots/mobile_home_screen.png) | ![About Me](docs/screenshots/mobile_about_me_screen.png) | ![Projects](docs/screenshots/mobile_projects_screen.png) | ![Connect](docs/screenshots/mobile_connect_screen.png) |
 
 ### Download
-- **iOS** — [App Store](https://apps.apple.com) *(add link once public)*
+- **iOS** — [App Store](https://apps.apple.com/us/app/rjp-portfolio/id6782103881)
 - **Android** — [Google Play](https://play.google.com) *(add link once public)*
 
 ---
