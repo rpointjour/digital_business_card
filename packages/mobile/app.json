@@ -3,7 +3,6 @@
     "name": "RJP Port",
     "slug": "rjp-dev",
     "version": "1.0.13",
-    "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "rjpdev",
     "userInterfaceStyle": "dark",
@@ -39,11 +38,9 @@
           "backgroundColor": "#08080a"
         }
       ],
-      "expo-font"
+      "expo-font",
+      "expo-web-browser"
     ],
-    "experiments": {
-      "typedRoutes": true
-    },
     "extra": {
       "router": {},
       "eas": {

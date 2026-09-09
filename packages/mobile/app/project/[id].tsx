@@ -100,7 +100,7 @@ export default function ProjectDetailScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
-  content: { paddingHorizontal: 24, paddingTop: 24, paddingBottom: 40 },
+  content: { paddingHorizontal: 24, paddingTop: 24, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
   notFound: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   notFoundText: { color: MUTED, fontSize: 16 },
   headerCard: {

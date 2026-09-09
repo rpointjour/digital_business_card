@@ -13,7 +13,7 @@ const BORDER = 'rgba(255,255,255,0.08)'
 
 export default function AboutScreen() {
   return (
-    <SafeAreaView style={styles.safe}>
+    <SafeAreaView style={styles.safe} edges={['top']}>
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
@@ -60,7 +60,7 @@ export default function AboutScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
-  content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40 },
+  content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
   sectionLabel: {
     fontSize: 12,
     color: ACCENT,

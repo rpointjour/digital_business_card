@@ -10,7 +10,7 @@ const BORDER = 'rgba(255,255,255,0.08)'
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView style={styles.safe}>
+    <SafeAreaView style={styles.safe} edges={['top']}>
       <ScrollView
         style={styles.scroll}
         contentContainerStyle={styles.content}
@@ -64,7 +64,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
   scroll: { flex: 1 },
-  content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40 },
+  content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
   icon: { width: 110, height: 88, marginBottom: 24 },
   greeting: {
     fontSize: 13,

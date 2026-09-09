@@ -10,7 +10,7 @@ const MUTED = 'rgba(255,255,255,0.45)'
 const CARD_BG = 'rgba(255,255,255,0.05)'
 const BORDER = 'rgba(255,255,255,0.08)'
 
-const THUMBNAILS: Record<string, ReturnType<typeof require>> = {
+const THUMBNAILS: Record<string, number> = {
   'alexa_relay.jpg':     require('../../assets/alexa_relay.jpg'),
   'distance_reader.jpg': require('../../assets/distance_reader.jpg'),
   'ble_relay.jpg':       require('../../assets/ble_relay.jpg'),
@@ -55,7 +55,7 @@ export default function ProjectsScreen() {
   const router = useRouter()
 
   return (
-    <SafeAreaView style={styles.safe}>
+    <SafeAreaView style={styles.safe} edges={['top']}>
       <FlatList
         data={projects}
         keyExtractor={(p) => p.id}
@@ -81,7 +81,7 @@ export default function ProjectsScreen() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
-  list: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40 },
+  list: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
   header: { marginBottom: 24 },
   sectionLabel: {
     fontSize: 12,
