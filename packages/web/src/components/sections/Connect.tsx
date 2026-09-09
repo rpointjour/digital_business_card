@@ -89,6 +89,8 @@ export default function Connect() {
         style={{ color: 'rgba(255,255,255,0.6)' }}
       >
         Built & designed by {profile.name}
+        <br />
+        <span style={{ color: 'rgba(255,255,255,0.35)' }}>Mobile v1.0.13 · iOS & Android</span>
       </motion.p>
 
       {/* Toast */}

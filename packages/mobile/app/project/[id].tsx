@@ -1,4 +1,4 @@
-import { ScrollView, View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { ScrollView, View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 import * as WebBrowser from 'expo-web-browser'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useLocalSearchParams, useNavigation } from 'expo-router'
@@ -73,7 +73,7 @@ export default function ProjectDetailScreen() {
             <Text style={styles.sectionTitle}>Demo</Text>
             <TouchableOpacity
               style={styles.watchBtn}
-              onPress={() => WebBrowser.openBrowserAsync(youtubeUrl)}
+              onPress={() => Linking.openURL(youtubeUrl)}
               activeOpacity={0.75}
             >
               <Ionicons name="logo-youtube" size={20} color="#ff4444" />
