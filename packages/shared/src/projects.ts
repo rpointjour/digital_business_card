@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description: 'A Raspberry Pi BLE GATT server that triggers a relay-controlled motor from phone and watch app.',
     techStack: ['Raspberry Pi', 'Bluetooth LE (GATT)', 'Python', 'Swift', 'watchOS'],
     thumbnail: 'ble_relay.jpg',
-    youtubeEmbedUrl: null,
+    youtubeEmbedUrl: 'https://www.youtube.com/embed/1ljtuc9dyV4',
     links: [],
   },
   {
