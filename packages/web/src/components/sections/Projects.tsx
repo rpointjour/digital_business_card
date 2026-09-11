@@ -91,7 +91,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         exit={{ opacity: 0, scale: 0.95, y: 16 }}
         transition={{ duration: 0.25 }}
         className="glass rounded-2xl overflow-hidden max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e: React.MouseEvent) => e.stopPropagation()}
       >
         {/* Thumbnail */}
         <div className="relative h-56">

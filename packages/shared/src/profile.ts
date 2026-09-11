@@ -16,4 +16,5 @@ export const profile = {
   blogUrl: 'https://rpointjour.wordpress.com/',
   portfolioUrl: 'Resume/RJP%20Portfolio%20-%20CE.pdf',
   portfolioPdfUrl: 'https://rpointjour.github.io/digital_business_card/Resume/RJP%20Portfolio%20-%20CE.pdf',
+  mobileVersion: '1.0.14',
 } as const

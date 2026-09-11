@@ -51,8 +51,8 @@ export default function Connect() {
             border: '1px solid rgba(192,192,192,0.25)',
             color: 'var(--color-accent)',
           }}
-          onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)' }}
-          onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(192,192,192,0.07)' }}
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)' }}
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => { e.currentTarget.style.background = 'rgba(192,192,192,0.07)' }}
         >
           Say Hello →
         </motion.button>
@@ -74,8 +74,8 @@ export default function Connect() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="font-mono text-xs tracking-widest uppercase transition-colors duration-200"
           style={{ color: 'rgba(255,255,255,0.6)' }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--color-accent)')}
-          onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
+          onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = 'var(--color-accent)')}
+          onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
         >
           Read my Blog ↗
         </motion.a>
@@ -90,7 +90,7 @@ export default function Connect() {
       >
         Built & designed by {profile.name}
         <br />
-        <span style={{ color: 'rgba(255,255,255,0.35)' }}>Mobile v1.0.13 · iOS & Android</span>
+        <span style={{ color: 'rgba(255,255,255,0.35)' }}>Mobile v{profile.mobileVersion} · iOS & Android</span>
       </motion.p>
 
       {/* Toast */}
