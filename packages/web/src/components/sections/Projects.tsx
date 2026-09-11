@@ -150,6 +150,16 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
               />
             </div>
           )}
+
+          <a
+            href={`${import.meta.env.BASE_URL}${profile.portfolioUrl}`}
+            target="_blank"
+            rel="noreferrer"
+            className="glass rounded-xl px-6 py-3 font-mono text-sm tracking-wide text-center transition-all duration-200 hover:scale-105"
+            style={{ color: 'var(--color-accent)', border: '1px solid rgba(192,192,192,0.2)' }}
+          >
+            View Full Portfolio →
+          </a>
         </div>
       </motion.div>
     </motion.div>

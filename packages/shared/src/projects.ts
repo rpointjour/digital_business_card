@@ -17,7 +17,7 @@ export const projects: Project[] = [
     description: 'A custom Alexa Skill that triggers a relay-controlled motor on the Pi through a Cloudflare Tunnel.',
     techStack: ['Raspberry Pi', 'Flask', 'ASK SDK', 'Cloudflare Tunnel', 'Porkbun DNS'],
     thumbnail: 'alexa_relay.jpg',
-    youtubeEmbedUrl: null,
+    youtubeEmbedUrl: 'https://www.youtube.com/embed/o9kcNs02D0g',
     links: [],
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description: 'Autonomous navigation and mapping with TurtleBot3 Waffle Pi using ROS and SLAM.',
     techStack: ['ROS', 'Python', 'SLAM', 'Raspberry Pi'],
     thumbnail: 'turtlebot3.jpg',
-    youtubeEmbedUrl: null,
+    youtubeEmbedUrl: 'https://www.youtube.com/embed/RezMFWbkmDw',
     links: [],
   },
   {

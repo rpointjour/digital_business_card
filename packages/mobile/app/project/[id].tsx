@@ -68,7 +68,7 @@ export default function ProjectDetailScreen() {
         </View>
 
         {/* YouTube */}
-        {youtubeUrl ? (
+        {youtubeUrl && (
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Demo</Text>
             <TouchableOpacity
@@ -80,19 +80,20 @@ export default function ProjectDetailScreen() {
               <Text style={styles.watchBtnText}>Watch on YouTube →</Text>
             </TouchableOpacity>
           </View>
-        ) : (
-          <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Portfolio</Text>
-            <TouchableOpacity
-              style={styles.watchBtn}
-              onPress={() => WebBrowser.openBrowserAsync(profile.portfolioPdfUrl)}
-              activeOpacity={0.75}
-            >
-              <Ionicons name="document-text-outline" size={20} color={ACCENT} />
-              <Text style={styles.watchBtnText}>View Full Portfolio →</Text>
-            </TouchableOpacity>
-          </View>
         )}
+
+        {/* Portfolio */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Portfolio</Text>
+          <TouchableOpacity
+            style={styles.watchBtn}
+            onPress={() => WebBrowser.openBrowserAsync(profile.portfolioPdfUrl)}
+            activeOpacity={0.75}
+          >
+            <Ionicons name="document-text-outline" size={20} color={ACCENT} />
+            <Text style={styles.watchBtnText}>View Full Portfolio →</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </SafeAreaView>
   )

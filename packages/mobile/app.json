@@ -2,7 +2,8 @@
   "expo": {
     "name": "RJP Port",
     "slug": "rjp-dev",
-    "version": "1.0.13",
+    "version": "1.0.14",
+    "newArchEnabled": false,
     "icon": "./assets/images/icon.png",
     "scheme": "rjpdev",
     "userInterfaceStyle": "dark",
@@ -12,7 +13,7 @@
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "16"
+      "buildNumber": "28"
     },
     "android": {
       "package": "com.rjpdev.portfolio",
@@ -39,7 +40,8 @@
         }
       ],
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      "./plugins/withFollyCoroFix.js"
     ],
     "extra": {
       "router": {},
