@@ -1,0 +1,24 @@
+name = "rjp-port-chat-proxy"
+main = "src/index.ts"
+compatibility_date = "2026-09-14"
+
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "1"
+
+  [ratelimits.simple]
+  limit = 20
+  period = 60
+
+[[ratelimits]]
+name = "GUESTBOOK_RATE_LIMITER"
+namespace_id = "2"
+
+  [ratelimits.simple]
+  limit = 5
+  period = 60
+
+[[d1_databases]]
+binding = "DB"
+database_name = "rjp-port-guestbook"
+database_id = "c93d45b8-fc26-4000-b241-7ab7de973afa"

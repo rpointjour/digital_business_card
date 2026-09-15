@@ -1,0 +1,13 @@
+{
+  "name": "@rjp/chat-proxy",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260702.1",
+    "wrangler": "4.125.0",
+    "typescript": "~6.0.3"
+  }
+}

@@ -1,6 +1,7 @@
 import { Tabs } from 'expo-router'
 import { Ionicons } from '@expo/vector-icons'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
+import * as Haptics from 'expo-haptics'
 import type { ColorValue } from 'react-native'
 
 const ACCENT = '#c9960c'
@@ -34,18 +35,14 @@ export default function TabLayout() {
         tabBarInactiveTintColor: INACTIVE,
         tabBarLabelStyle: { fontSize: 11, fontWeight: '500' },
       }}
+      screenListeners={{
+        tabPress: () => Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light),
+      }}
     >
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: icon('home', 'home-outline'),
-        }}
-      />
       <Tabs.Screen
         name="about"
         options={{
-          title: 'About',
+          title: 'Home',
           tabBarIcon: icon('person', 'person-outline'),
         }}
       />
@@ -54,6 +51,13 @@ export default function TabLayout() {
         options={{
           title: 'Projects',
           tabBarIcon: icon('briefcase', 'briefcase-outline'),
+        }}
+      />
+      <Tabs.Screen
+        name="index"
+        options={{
+          title: 'ChatRJP',
+          tabBarIcon: icon('chatbubble', 'chatbubble-outline'),
         }}
       />
       <Tabs.Screen

@@ -1,7 +1,8 @@
-import { ScrollView, View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { ScrollView, View, Text, StyleSheet, TouchableOpacity, Share, Linking } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import * as Clipboard from 'expo-clipboard'
 import * as WebBrowser from 'expo-web-browser'
+import * as Haptics from 'expo-haptics'
 import { Ionicons } from '@expo/vector-icons'
 import Constants from 'expo-constants'
 import { useState } from 'react'
@@ -32,9 +33,30 @@ export default function ContactScreen() {
   const [copied, setCopied] = useState(false)
 
   async function handleEmailPress() {
+    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
     await Clipboard.setStringAsync(profile.email)
     setCopied(true)
     setTimeout(() => setCopied(false), 3000)
+  }
+
+  async function handleShare() {
+    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium)
+    await Share.share({
+      message: `Check out ${profile.name}'s portfolio: https://rpointjour.github.io/digital_business_card/`,
+      url: 'https://rpointjour.github.io/digital_business_card/',
+    })
+  }
+
+  async function handleSocialPress(link: SocialLink) {
+    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+    // YouTube deep-links into the YouTube app (or falls back to browser) the same
+    // way project demo videos do — WebBrowser's in-app browser didn't reliably
+    // open YouTube links on Android.
+    if (link.icon === 'youtube') {
+      Linking.openURL(link.url)
+    } else {
+      WebBrowser.openBrowserAsync(link.url)
+    }
   }
 
   return (
@@ -63,6 +85,13 @@ export default function ContactScreen() {
           )}
         </View>
 
+        <View style={styles.actionsRow}>
+          <TouchableOpacity style={styles.actionBtn} onPress={handleShare} activeOpacity={0.75}>
+            <Ionicons name="share-outline" size={18} color={ACCENT} />
+            <Text style={styles.actionBtnText}>Share Profile</Text>
+          </TouchableOpacity>
+        </View>
+
         <View style={styles.divider} />
 
         <View>
@@ -72,7 +101,7 @@ export default function ContactScreen() {
               <TouchableOpacity
                 key={link.name}
                 style={styles.socialRow}
-                onPress={() => WebBrowser.openBrowserAsync(link.url)}
+                onPress={() => handleSocialPress(link)}
                 activeOpacity={0.7}
               >
                 <View style={styles.socialIcon}>
@@ -82,17 +111,6 @@ export default function ContactScreen() {
                 <Ionicons name="chevron-forward" size={16} color={MUTED} />
               </TouchableOpacity>
             ))}
-            <TouchableOpacity
-              style={styles.socialRow}
-              onPress={() => WebBrowser.openBrowserAsync(profile.blogUrl)}
-              activeOpacity={0.7}
-            >
-              <View style={styles.socialIcon}>
-                <Ionicons name="document-text-outline" size={20} color="#9ca3af" />
-              </View>
-              <Text style={styles.socialName}>Blog</Text>
-              <Ionicons name="chevron-forward" size={16} color={MUTED} />
-            </TouchableOpacity>
           </View>
         </View>
 
@@ -120,6 +138,7 @@ const styles = StyleSheet.create({
   emailBtn: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: 10,
     backgroundColor: CARD_BG,
     borderWidth: 1,
@@ -127,10 +146,23 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     paddingHorizontal: 24,
     paddingVertical: 16,
-    alignSelf: 'flex-start',
   },
   emailBtnText: { fontSize: 15, color: ACCENT, fontWeight: '500' },
   emailAddress: { fontSize: 12, color: MUTED, marginTop: 8, marginLeft: 4 },
+  actionsRow: { flexDirection: 'row', gap: 12, marginTop: 16 },
+  actionBtn: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    backgroundColor: CARD_BG,
+    borderWidth: 1,
+    borderColor: BORDER,
+    borderRadius: 14,
+    paddingVertical: 14,
+  },
+  actionBtnText: { fontSize: 15, color: ACCENT, fontWeight: '500' },
   divider: { height: 1, backgroundColor: BORDER, marginVertical: 28 },
   socialHeading: { fontSize: 16, fontWeight: '600', color: '#ffffff', marginBottom: 16 },
   socialList: {

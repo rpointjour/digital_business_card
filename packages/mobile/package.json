@@ -8,6 +8,7 @@
     "@rjp/shared": "workspace:*",
     "babel-preset-expo": "^57.0.11",
     "expo": "~57.0.21",
+    "expo-asset": "~57.0.17",
     "expo-clipboard": "~57.0.1",
     "expo-constants": "~57.0.17",
     "expo-contacts": "^57.0.5",

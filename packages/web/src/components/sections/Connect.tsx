@@ -64,21 +64,6 @@ export default function Connect() {
         >
           <SocialIcons links={socialLinks} />
         </motion.div>
-
-        {/* Blog link */}
-        <motion.a
-          href={profile.blogUrl}
-          target="_blank"
-          rel="noreferrer"
-          initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          className="font-mono text-xs tracking-widest uppercase transition-colors duration-200"
-          style={{ color: 'rgba(255,255,255,0.6)' }}
-          onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = 'var(--color-accent)')}
-          onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
-        >
-          Read my Blog ↗
-        </motion.a>
       </div>
 
       {/* Footer */}

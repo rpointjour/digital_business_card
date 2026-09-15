@@ -1,5 +1,6 @@
 import { ScrollView, View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 import * as WebBrowser from 'expo-web-browser'
+import * as Haptics from 'expo-haptics'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useLocalSearchParams, useNavigation } from 'expo-router'
 import { useEffect } from 'react'
@@ -73,7 +74,10 @@ export default function ProjectDetailScreen() {
             <Text style={styles.sectionTitle}>Demo</Text>
             <TouchableOpacity
               style={styles.watchBtn}
-              onPress={() => Linking.openURL(youtubeUrl)}
+              onPress={() => {
+                Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+                Linking.openURL(youtubeUrl)
+              }}
               activeOpacity={0.75}
             >
               <Ionicons name="logo-youtube" size={20} color="#ff4444" />
@@ -87,7 +91,10 @@ export default function ProjectDetailScreen() {
           <Text style={styles.sectionTitle}>Portfolio</Text>
           <TouchableOpacity
             style={styles.watchBtn}
-            onPress={() => WebBrowser.openBrowserAsync(profile.portfolioPdfUrl)}
+            onPress={() => {
+              Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+              WebBrowser.openBrowserAsync(profile.portfolioPdfUrl)
+            }}
             activeOpacity={0.75}
           >
             <Ionicons name="document-text-outline" size={20} color={ACCENT} />

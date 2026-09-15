@@ -2,7 +2,7 @@
   "expo": {
     "name": "RJP Port",
     "slug": "rjp-dev",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "newArchEnabled": false,
     "icon": "./assets/images/icon.png",
     "scheme": "rjpdev",
@@ -11,9 +11,10 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.rjpdev.portfolio",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSContactsUsageDescription": "Save Roody's contact info directly to your phone."
       },
-      "buildNumber": "28"
+      "buildNumber": "31"
     },
     "android": {
       "package": "com.rjpdev.portfolio",
@@ -47,7 +48,8 @@
       "router": {},
       "eas": {
         "projectId": "22eb7709-1e2b-4312-a32c-7e12f53e7d00"
-      }
+      },
+      "chatApiUrl": "https://rjp-port-chat-proxy.rjpdev.workers.dev"
     },
     "owner": "rjpdev"
   }

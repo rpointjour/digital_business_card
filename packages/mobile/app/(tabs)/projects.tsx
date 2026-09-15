@@ -1,6 +1,19 @@
-import { FlatList, View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
+import {
+  FlatList,
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  TextInput,
+  ActivityIndicator,
+} from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { useRouter } from 'expo-router'
+import { useRouter, useLocalSearchParams } from 'expo-router'
+import * as Haptics from 'expo-haptics'
+import { Ionicons } from '@expo/vector-icons'
+import Constants from 'expo-constants'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { projects } from '@rjp/shared'
 import type { Project } from '@rjp/shared'
 
@@ -15,6 +28,27 @@ const THUMBNAILS: Record<string, number> = {
   'distance_reader.jpg': require('../../assets/distance_reader.jpg'),
   'ble_relay.jpg':       require('../../assets/ble_relay.jpg'),
   'turtlebot3.jpg':      require('../../assets/turtlebot3.jpg'),
+}
+
+const CHAT_API_URL = Constants.expoConfig?.extra?.chatApiUrl as string | undefined
+const GUESTBOOK_URL = CHAT_API_URL ? `${CHAT_API_URL}/guestbook` : undefined
+const FEEDBACK_PREVIEW_COUNT = 5
+
+type FeedbackEntry = {
+  id: number
+  name: string
+  message: string
+  created_at: string
+}
+
+function timeAgo(iso: string): string {
+  const diffMs = Date.now() - new Date(iso).getTime()
+  const mins = Math.floor(diffMs / 60000)
+  if (mins < 60) return `${mins}m ago`
+  const hours = Math.floor(mins / 60)
+  if (hours < 24) return `${hours}h ago`
+  const days = Math.floor(hours / 24)
+  return `${days}d ago`
 }
 
 function ProjectCard({ project, onPress }: { project: Project; onPress: () => void }) {
@@ -53,10 +87,70 @@ function ProjectCard({ project, onPress }: { project: Project; onPress: () => vo
 
 export default function ProjectsScreen() {
   const router = useRouter()
+  const { scrollTo } = useLocalSearchParams<{ scrollTo?: string }>()
+  const listRef = useRef<FlatList>(null)
+
+  const [feedback, setFeedback] = useState<FeedbackEntry[]>([])
+  const [nameInput, setNameInput] = useState('')
+  const [messageInput, setMessageInput] = useState('')
+  const [posting, setPosting] = useState(false)
+  const [postError, setPostError] = useState<string | null>(null)
+
+  const fetchFeedback = useCallback(async () => {
+    if (!GUESTBOOK_URL) return
+    try {
+      const res = await fetch(GUESTBOOK_URL)
+      const data = await res.json()
+      setFeedback(data.entries ?? [])
+    } catch {
+      // Keep whatever feedback is already showing.
+    }
+  }, [])
+
+  useEffect(() => {
+    fetchFeedback().finally(() => {
+      if (scrollTo === 'feedback') {
+        // Wait a tick for the footer's layout (including fetched feedback) to settle.
+        requestAnimationFrame(() => listRef.current?.scrollToEnd({ animated: true }))
+      } else if (scrollTo === 'top') {
+        requestAnimationFrame(() => listRef.current?.scrollToOffset({ offset: 0, animated: true }))
+      }
+    })
+  }, [fetchFeedback, scrollTo])
+
+  async function handlePostFeedback() {
+    const name = nameInput.trim()
+    const message = messageInput.trim()
+    if (!name || !message || posting || !GUESTBOOK_URL) return
+
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+    setPosting(true)
+    setPostError(null)
+
+    try {
+      const res = await fetch(GUESTBOOK_URL, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ name, message }),
+      })
+      if (!res.ok) throw new Error(`Request failed (${res.status})`)
+
+      const data = await res.json()
+      setFeedback((prev) => [data.entry, ...prev])
+      setNameInput('')
+      setMessageInput('')
+      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+    } catch {
+      setPostError("Couldn't post your feedback. Try again in a bit.")
+    } finally {
+      setPosting(false)
+    }
+  }
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
       <FlatList
+        ref={listRef}
         data={projects}
         keyExtractor={(p) => p.id}
         contentContainerStyle={styles.list}
@@ -70,10 +164,62 @@ export default function ProjectsScreen() {
         renderItem={({ item }) => (
           <ProjectCard
             project={item}
-            onPress={() => router.push(`/project/${item.id}`)}
+            onPress={() => {
+              Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+              router.push(`/project/${item.id}`)
+            }}
           />
         )}
         ItemSeparatorComponent={() => <View style={styles.separator} />}
+        ListFooterComponent={
+          <View style={styles.feedbackCard}>
+            <View style={styles.feedbackHeader}>
+              <Ionicons name="chatbubbles-outline" size={16} color={ACCENT} />
+              <Text style={styles.feedbackHeading}>Feedback</Text>
+            </View>
+
+            <TextInput
+              style={styles.feedbackInput}
+              value={nameInput}
+              onChangeText={setNameInput}
+              placeholder="Your name"
+              placeholderTextColor={MUTED}
+              maxLength={40}
+            />
+            <TextInput
+              style={[styles.feedbackInput, styles.feedbackMessageInput]}
+              value={messageInput}
+              onChangeText={setMessageInput}
+              placeholder="What do you think of these projects?"
+              placeholderTextColor={MUTED}
+              maxLength={300}
+              multiline
+            />
+            {postError && <Text style={styles.feedbackError}>{postError}</Text>}
+            <TouchableOpacity
+              style={[styles.feedbackPostBtn, (!nameInput.trim() || !messageInput.trim()) && styles.feedbackPostBtnDisabled]}
+              onPress={handlePostFeedback}
+              activeOpacity={0.75}
+              disabled={posting || !nameInput.trim() || !messageInput.trim()}
+            >
+              {posting ? (
+                <ActivityIndicator size="small" color={BG} />
+              ) : (
+                <Text style={styles.feedbackPostBtnText}>Post</Text>
+              )}
+            </TouchableOpacity>
+
+            {feedback.slice(0, FEEDBACK_PREVIEW_COUNT).map((entry) => (
+              <View key={entry.id} style={styles.feedbackEntry}>
+                <View style={styles.feedbackEntryHeader}>
+                  <Text style={styles.feedbackEntryName}>{entry.name}</Text>
+                  <Text style={styles.feedbackEntryTime}>{timeAgo(entry.created_at)}</Text>
+                </View>
+                <Text style={styles.feedbackEntryMessage}>{entry.message}</Text>
+              </View>
+            ))}
+          </View>
+        }
       />
     </SafeAreaView>
   )
@@ -131,4 +277,46 @@ const styles = StyleSheet.create({
   },
   techText: { fontSize: 11, color: ACCENT },
   techMore: { fontSize: 11, color: MUTED },
+  feedbackCard: {
+    backgroundColor: CARD_BG,
+    borderWidth: 1,
+    borderColor: BORDER,
+    borderRadius: 20,
+    padding: 16,
+    marginTop: 16,
+  },
+  feedbackHeader: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 16 },
+  feedbackHeading: { fontSize: 13, color: ACCENT, letterSpacing: 2, textTransform: 'uppercase', fontWeight: '600' },
+  feedbackInput: {
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    borderWidth: 1,
+    borderColor: BORDER,
+    borderRadius: 12,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    color: '#ffffff',
+    fontSize: 14,
+    marginBottom: 10,
+  },
+  feedbackMessageInput: { minHeight: 70, textAlignVertical: 'top' },
+  feedbackError: { fontSize: 12, color: '#ff6b6b', marginBottom: 10 },
+  feedbackPostBtn: {
+    backgroundColor: ACCENT,
+    borderRadius: 12,
+    paddingVertical: 12,
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  feedbackPostBtnDisabled: { opacity: 0.4 },
+  feedbackPostBtnText: { fontSize: 14, color: BG, fontWeight: '600' },
+  feedbackEntry: {
+    borderTopWidth: 1,
+    borderTopColor: BORDER,
+    paddingTop: 12,
+    marginTop: 12,
+  },
+  feedbackEntryHeader: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 4 },
+  feedbackEntryName: { fontSize: 13, color: ACCENT, fontWeight: '600' },
+  feedbackEntryTime: { fontSize: 11, color: MUTED },
+  feedbackEntryMessage: { fontSize: 13, color: 'rgba(255,255,255,0.8)', lineHeight: 19 },
 })
