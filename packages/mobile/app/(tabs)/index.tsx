@@ -9,7 +9,6 @@ import {
   RefreshControl,
   Animated,
   LayoutAnimation,
-  UIManager,
   Platform,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -23,10 +22,6 @@ import Constants from 'expo-constants'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { profile, socialLinks, skills } from '@rjp/shared'
 import type { Skill } from '@rjp/shared'
-
-if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
-  UIManager.setLayoutAnimationEnabledExperimental(true)
-}
 
 const profilePhoto = require('../../assets/profile.jpg')
 
@@ -217,27 +212,34 @@ export default function HomeScreen() {
     const { status } = await Contacts.requestPermissionsAsync()
     if (status !== 'granted') return
 
-    const asset = await Asset.fromModule(profilePhoto).downloadAsync()
-
     const [firstName, ...rest] = profile.name.split(' ')
-    await Contacts.addContactAsync({
-      [Contacts.Fields.ContactType]: Contacts.ContactTypes.Person,
-      [Contacts.Fields.Name]: profile.name,
-      [Contacts.Fields.FirstName]: firstName,
-      [Contacts.Fields.LastName]: rest.join(' '),
-      [Contacts.Fields.JobTitle]: profile.roles[0],
-      ...(asset.localUri ? { [Contacts.Fields.Image]: { uri: asset.localUri } } : {}),
-      [Contacts.Fields.Emails]: [{ email: profile.email, label: 'work', id: '0' }],
-      [Contacts.Fields.UrlAddresses]: [
-        { url: profile.portfolioPdfUrl, label: 'Portfolio', id: '0' },
-        ...socialLinks.map((link, i) => ({ url: link.url, label: link.name, id: String(i + 1) })),
-      ],
-      [Contacts.Fields.Note]: profile.summary,
-    })
-
-    await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
-    setSaved(true)
-    setTimeout(() => setSaved(false), 3000)
+    try {
+      const contactData: Contacts.Contact = {
+        contactType: Contacts.ContactTypes.Person,
+        name: profile.name,
+        firstName,
+        lastName: rest.join(' '),
+        jobTitle: profile.roles[0],
+        emails: [{ email: profile.email, label: 'work', id: '0' }],
+        ...(Platform.OS === 'ios' ? {
+          urlAddresses: [
+            { url: profile.portfolioPdfUrl, label: 'Portfolio', id: '0' },
+            ...socialLinks.map((link, i) => ({ url: link.url, label: link.name, id: String(i + 1) })),
+          ],
+          note: profile.summary,
+        } : {}),
+      }
+      if (Platform.OS === 'ios') {
+        const asset = await Asset.fromModule(profilePhoto).downloadAsync()
+        if (asset.localUri) contactData.image = { uri: asset.localUri }
+      }
+      await Contacts.addContactAsync(contactData)
+      await Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+      setSaved(true)
+      setTimeout(() => setSaved(false), 3000)
+    } catch (e) {
+      console.error('Save contact failed:', e)
+    }
   }
 
   const fetchGithub = useCallback(async () => {
