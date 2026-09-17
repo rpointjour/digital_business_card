@@ -14,7 +14,7 @@
         "ITSAppUsesNonExemptEncryption": false,
         "NSContactsUsageDescription": "Save Roody's contact info directly to your phone."
       },
-      "buildNumber": "32"
+      "buildNumber": "33"
     },
     "android": {
       "package": "com.rjpdev.portfolio",
@@ -42,6 +42,8 @@
       ],
       "expo-font",
       "expo-web-browser",
+      "expo-contacts",
+      "expo-secure-store",
       "./plugins/withFollyCoroFix.js"
     ],
     "extra": {

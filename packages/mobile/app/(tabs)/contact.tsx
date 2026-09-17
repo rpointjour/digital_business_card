@@ -48,7 +48,6 @@ export default function ContactScreen() {
   }
 
   async function handleSocialPress(link: SocialLink) {
-    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
     // YouTube deep-links into the YouTube app (or falls back to browser) the same
     // way project demo videos do — WebBrowser's in-app browser didn't reliably
     // open YouTube links on Android.

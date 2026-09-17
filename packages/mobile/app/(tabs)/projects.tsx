@@ -7,15 +7,38 @@ import {
   TouchableOpacity,
   TextInput,
   ActivityIndicator,
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { useRouter, useLocalSearchParams } from 'expo-router'
 import * as Haptics from 'expo-haptics'
+import * as SecureStore from 'expo-secure-store'
 import { Ionicons } from '@expo/vector-icons'
 import Constants from 'expo-constants'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { projects } from '@rjp/shared'
 import type { Project } from '@rjp/shared'
+
+const DELETE_TOKENS_KEY = 'feedbackDeleteTokens'
+
+async function loadDeleteTokens(): Promise<Record<number, string>> {
+  try {
+    const raw = await SecureStore.getItemAsync(DELETE_TOKENS_KEY)
+    return raw ? JSON.parse(raw) : {}
+  } catch {
+    return {}
+  }
+}
+
+async function saveDeleteTokens(tokens: Record<number, string>) {
+  try {
+    await SecureStore.setItemAsync(DELETE_TOKENS_KEY, JSON.stringify(tokens))
+  } catch {
+    // If this fails, the delete button just won't show up for that comment later — not fatal.
+  }
+}
 
 const BG = '#08080a'
 const ACCENT = '#c9960c'
@@ -95,6 +118,11 @@ export default function ProjectsScreen() {
   const [messageInput, setMessageInput] = useState('')
   const [posting, setPosting] = useState(false)
   const [postError, setPostError] = useState<string | null>(null)
+  const [myTokens, setMyTokens] = useState<Record<number, string>>({})
+
+  useEffect(() => {
+    loadDeleteTokens().then(setMyTokens)
+  }, [])
 
   const fetchFeedback = useCallback(async () => {
     if (!GUESTBOOK_URL) return
@@ -133,10 +161,16 @@ export default function ProjectsScreen() {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ name, message }),
       })
-      if (!res.ok) throw new Error(`Request failed (${res.status})`)
-
       const data = await res.json()
+      if (!res.ok) {
+        setPostError(typeof data.error === 'string' ? data.error : "Couldn't post your feedback. Try again in a bit.")
+        return
+      }
+
       setFeedback((prev) => [data.entry, ...prev])
+      const nextTokens = { ...myTokens, [data.entry.id]: data.deleteToken }
+      setMyTokens(nextTokens)
+      saveDeleteTokens(nextTokens)
       setNameInput('')
       setMessageInput('')
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
@@ -147,8 +181,40 @@ export default function ProjectsScreen() {
     }
   }
 
+  function handleDeleteFeedback(id: number) {
+    Alert.alert('Delete your comment?', 'This can\'t be undone.', [
+      { text: 'Cancel', style: 'cancel' },
+      {
+        text: 'Delete',
+        style: 'destructive',
+        onPress: async () => {
+          try {
+            const res = await fetch(`${GUESTBOOK_URL}/${id}`, {
+              method: 'DELETE',
+              headers: { 'content-type': 'application/json' },
+              body: JSON.stringify({ deleteToken: myTokens[id] }),
+            })
+            if (!res.ok) return
+            setFeedback((prev) => prev.filter((e) => e.id !== id))
+            const nextTokens = { ...myTokens }
+            delete nextTokens[id]
+            setMyTokens(nextTokens)
+            saveDeleteTokens(nextTokens)
+            Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success)
+          } catch {
+            // Leave the comment as-is; they can try again.
+          }
+        },
+      },
+    ])
+  }
+
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
+      <KeyboardAvoidingView
+        style={styles.flex}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
       <FlatList
         ref={listRef}
         data={projects}
@@ -182,6 +248,7 @@ export default function ProjectsScreen() {
               style={styles.feedbackInput}
               value={nameInput}
               onChangeText={setNameInput}
+              onFocus={() => requestAnimationFrame(() => listRef.current?.scrollToEnd({ animated: true }))}
               placeholder="Your name"
               placeholderTextColor={MUTED}
               maxLength={40}
@@ -190,6 +257,7 @@ export default function ProjectsScreen() {
               style={[styles.feedbackInput, styles.feedbackMessageInput]}
               value={messageInput}
               onChangeText={setMessageInput}
+              onFocus={() => requestAnimationFrame(() => listRef.current?.scrollToEnd({ animated: true }))}
               placeholder="What do you think of these projects?"
               placeholderTextColor={MUTED}
               maxLength={300}
@@ -213,7 +281,17 @@ export default function ProjectsScreen() {
               <View key={entry.id} style={styles.feedbackEntry}>
                 <View style={styles.feedbackEntryHeader}>
                   <Text style={styles.feedbackEntryName}>{entry.name}</Text>
-                  <Text style={styles.feedbackEntryTime}>{timeAgo(entry.created_at)}</Text>
+                  <View style={styles.feedbackEntryHeaderRight}>
+                    <Text style={styles.feedbackEntryTime}>{timeAgo(entry.created_at)}</Text>
+                    {myTokens[entry.id] && (
+                      <TouchableOpacity
+                        onPress={() => handleDeleteFeedback(entry.id)}
+                        hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                      >
+                        <Ionicons name="trash-outline" size={14} color={MUTED} />
+                      </TouchableOpacity>
+                    )}
+                  </View>
                 </View>
                 <Text style={styles.feedbackEntryMessage}>{entry.message}</Text>
               </View>
@@ -221,12 +299,14 @@ export default function ProjectsScreen() {
           </View>
         }
       />
+      </KeyboardAvoidingView>
     </SafeAreaView>
   )
 }
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
+  flex: { flex: 1 },
   list: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
   header: { marginBottom: 24 },
   sectionLabel: {
@@ -315,7 +395,8 @@ const styles = StyleSheet.create({
     paddingTop: 12,
     marginTop: 12,
   },
-  feedbackEntryHeader: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 4 },
+  feedbackEntryHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 },
+  feedbackEntryHeaderRight: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   feedbackEntryName: { fontSize: 13, color: ACCENT, fontWeight: '600' },
   feedbackEntryTime: { fontSize: 11, color: MUTED },
   feedbackEntryMessage: { fontSize: 13, color: 'rgba(255,255,255,0.8)', lineHeight: 19 },

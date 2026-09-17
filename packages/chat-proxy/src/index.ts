@@ -104,6 +104,39 @@ async function handleGuestbookList(env: Env): Promise<Response> {
   return json({ entries: results })
 }
 
+const MODERATION_SYSTEM_PROMPT =
+  'You moderate visitor comments on a professional software engineer\'s portfolio site guestbook. ' +
+  'Reply with exactly one word: ALLOW or REJECT. REJECT if the message contains profanity, spam ' +
+  '(links, ads, gibberish, repeated characters), harassment, hate speech, or trolling. ALLOW ' +
+  'everything else, including blunt or critical professional feedback.'
+
+async function moderateComment(name: string, message: string, env: Env): Promise<boolean> {
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': env.ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        max_tokens: 5,
+        system: MODERATION_SYSTEM_PROMPT,
+        messages: [{ role: 'user', content: `Name: ${name}\nMessage: ${message}` }],
+      }),
+    })
+
+    if (!res.ok) return true // fail open: don't block real feedback over a moderation-service hiccup
+
+    const data = await res.json<{ content?: { text?: string }[] }>()
+    const verdict = data.content?.[0]?.text?.trim().toUpperCase() ?? ''
+    return !verdict.startsWith('REJECT')
+  } catch {
+    return true // fail open, same reasoning as above
+  }
+}
+
 async function handleGuestbookPost(request: Request, env: Env): Promise<Response> {
   const { success } = await env.GUESTBOOK_RATE_LIMITER.limit({ key: clientIp(request) })
   if (!success) {
@@ -127,23 +160,40 @@ async function handleGuestbookPost(request: Request, env: Env): Promise<Response
     return json({ error: 'Invalid message' }, 400)
   }
 
+  const allowed = await moderateComment(name, message, env)
+  if (!allowed) {
+    return json({ error: 'This comment looks like spam or inappropriate content and was not posted.' }, 422)
+  }
+
+  const deleteToken = crypto.randomUUID()
   const result = await env.DB.prepare(
-    'INSERT INTO comments (name, message) VALUES (?, ?) RETURNING id, name, message, created_at'
+    'INSERT INTO comments (name, message, delete_token) VALUES (?, ?, ?) RETURNING id, name, message, created_at'
   )
-    .bind(name, message)
+    .bind(name, message, deleteToken)
     .first()
 
-  return json({ entry: result }, 201)
+  return json({ entry: result, deleteToken }, 201)
 }
 
 async function handleGuestbookDelete(request: Request, env: Env, id: string): Promise<Response> {
-  if (request.headers.get('x-admin-key') !== env.ADMIN_SECRET) {
-    return json({ error: 'Unauthorized' }, 401)
-  }
-
   const numericId = Number(id)
   if (!Number.isInteger(numericId)) {
     return json({ error: 'Invalid id' }, 400)
+  }
+
+  const isAdmin = request.headers.get('x-admin-key') === env.ADMIN_SECRET
+  if (!isAdmin) {
+    let payload: { deleteToken?: unknown }
+    try {
+      payload = await request.json()
+    } catch {
+      payload = {}
+    }
+    const token = typeof payload.deleteToken === 'string' ? payload.deleteToken : null
+    if (!token) return json({ error: 'Unauthorized' }, 401)
+
+    const row = await env.DB.prepare('SELECT delete_token FROM comments WHERE id = ?').bind(numericId).first<{ delete_token: string }>()
+    if (!row || row.delete_token !== token) return json({ error: 'Unauthorized' }, 401)
   }
 
   await env.DB.prepare('DELETE FROM comments WHERE id = ?').bind(numericId).run()
