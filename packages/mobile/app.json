@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/images/android-icon-foreground.png"
       },
       "predictiveBackGestureEnabled": false,
-      "versionCode": 23
+      "versionCode": 24
     },
     "web": {
       "bundler": "metro",
