@@ -4,6 +4,7 @@
   <img src="docs/app-icon.png" alt="RJP Port app icon" width="140" />
 </p>
 
+#
 A full-stack personal portfolio — web app + native iOS/Android mobile app + a Cloudflare Worker backend — built as a pnpm monorepo.
 
 **Live site:** https://rpointjour.github.io/digital_business_card
