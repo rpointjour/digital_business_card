@@ -107,7 +107,7 @@ export default function ChatScreen() {
         keyboardVerticalOffset={90}
       >
         <View style={styles.header}>
-          <Text style={styles.sectionLabel}>Chat</Text>
+          <Text style={styles.sectionLabel}>03. Chat</Text>
           <Text style={styles.heading}>ChatRJP</Text>
         </View>
 

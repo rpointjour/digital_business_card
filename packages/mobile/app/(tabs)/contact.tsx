@@ -65,7 +65,7 @@ export default function ContactScreen() {
         showsVerticalScrollIndicator={false}
       >
         <View>
-          <Text style={styles.sectionLabel}>03. Connect</Text>
+          <Text style={styles.sectionLabel}>04. Connect</Text>
           <Text style={styles.heading}>Let's Connect</Text>
           <Text style={styles.subheading}>
             Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is open.

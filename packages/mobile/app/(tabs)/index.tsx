@@ -127,7 +127,7 @@ function StatCard({ label, value }: { label: string; value: string }) {
   }
 
   return (
-    <TouchableOpacity style={styles.statCard} onPress={toggle} activeOpacity={0.75}>
+    <TouchableOpacity style={styles.statCard} onPress={toggle} activeOpacity={0.92}>
       <View style={styles.statCardHeader}>
         <Text style={styles.statValue}>{value}</Text>
         <Ionicons name={expanded ? 'chevron-up' : 'chevron-down'} size={14} color={MUTED} />
@@ -273,6 +273,9 @@ export default function HomeScreen() {
           <RefreshControl refreshing={refreshing} onRefresh={handleRefresh} tintColor={ACCENT} />
         }
       >
+        <Text style={styles.sectionLabel}>01. RJP Portfolio</Text>
+        <Text style={styles.heading}>Welcome</Text>
+
         <View style={styles.bioCard}>
           <Image source={profilePhoto} style={styles.photo} resizeMode="cover" />
           <View style={styles.bioText}>
@@ -370,6 +373,14 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: BG },
   content: { paddingHorizontal: 24, paddingTop: 48, paddingBottom: 40, maxWidth: 640, alignSelf: 'center', width: '100%' },
+  sectionLabel: {
+    fontSize: 12,
+    color: ACCENT,
+    letterSpacing: 4,
+    textTransform: 'uppercase',
+    marginBottom: 8,
+  },
+  heading: { fontSize: 32, fontWeight: '700', color: '#ffffff', marginBottom: 24 },
   bioCard: {
     flexDirection: 'row',
     gap: 16,
