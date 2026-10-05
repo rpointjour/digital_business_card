@@ -56,7 +56,7 @@ The app is more than a portfolio to scroll through — it talks to a live backen
 | ![Home](docs/screenshots/mobile_home_screen.png) | ![Projects](docs/screenshots/mobile_projects_screen.png) | ![ChatRJP](docs/screenshots/mobile_chat_screen.png) | ![Connect](docs/screenshots/mobile_connect_screen.png) |
 
 ### Download
-- **iOS** — [App Store](https://apps.apple.com/us/app/rjp-portfolio/id6782103881)
+- **iOS** — [App Store](https://apps.apple.com/us/app/rjp-portfolio/id6782103881) (v1.0.15)
 - **Android** — [Google Play](https://play.google.com/store/apps/details?id=com.rjpdev.portfolio) (v1.0.15)
 
 ---
