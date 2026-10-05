@@ -54,7 +54,7 @@ The app is more than a portfolio to scroll through — it talks to a live backen
 
 ### Download
 - **iOS** — [App Store](https://apps.apple.com/us/app/rjp-portfolio/id6782103881)
-- **Android** — [Google Play](https://play.google.com) *(add link once public)*
+- **Android** — [Google Play](https://play.google.com/store/apps/details?id=com.rjpdev.portfolio) (v1.0.15)
 
 ---
 

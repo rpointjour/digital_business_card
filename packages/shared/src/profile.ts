@@ -15,5 +15,7 @@ export const profile = {
   email: 'rpointjour@yahoo.com',
   portfolioUrl: 'Resume/RJP%20Portfolio%20-%20CE.pdf',
   portfolioPdfUrl: 'https://rpointjour.github.io/digital_business_card/Resume/RJP%20Portfolio%20-%20CE.pdf',
-  mobileVersion: '1.0.14',
+  mobileVersion: '1.0.15',
+  appStoreUrl: 'https://apps.apple.com/us/app/rjp-portfolio/id6782103881',
+  googlePlayUrl: 'https://play.google.com/store/apps/details?id=com.rjpdev.portfolio',
 } as const

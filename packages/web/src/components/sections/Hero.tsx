@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { profile, socialLinks } from '@rjp/shared'
 import SocialIcons from '../ui/SocialIcons'
+import AppBanner from './AppBanner'
 
 function useTypewriter(words: readonly string[], speed = 100, pause = 2000) {
   const [display, setDisplay] = useState('')
@@ -42,7 +43,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-16 overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center px-6 pt-16 overflow-hidden"
     >
       {/* Background glow blobs */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -56,7 +57,12 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-3xl w-full gap-6">
+      {/* App download banner — top of section */}
+      <div className="relative z-10 w-full max-w-3xl pt-6 pb-2">
+        <AppBanner />
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center text-center max-w-3xl w-full gap-6 flex-1 justify-center pb-16">
         {/* Greeting */}
         <motion.p
           variants={fadeUp} custom={0.1} initial="hidden" animate="show"

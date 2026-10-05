@@ -64,6 +64,7 @@ export default function Connect() {
         >
           <SocialIcons links={socialLinks} />
         </motion.div>
+
       </div>
 
       {/* Footer */}
