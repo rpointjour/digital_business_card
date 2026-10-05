@@ -8,7 +8,10 @@
 A full-stack personal portfolio — web app + native iOS/Android mobile app + a Cloudflare Worker backend — built as a pnpm monorepo.
 
 **Live site:** https://rpointjour.github.io/digital_business_card
+
 **iOS app:** live on the [App Store](https://apps.apple.com/us/app/rjp-portfolio/id6782103881) (v1.0.15)
+
+**Android app:** live on the [Google Play Store](https://play.google.com/store/apps/details?id=com.rjpdev.portfolio) (v1.0.15)
 
 ---
 
